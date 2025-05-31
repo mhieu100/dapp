@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>PhoneHub - Premium Smartphones</title>
+  <style>
+    .phone-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="smooth-scroll bg-gradient-to-b from-gray-50 to-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-white/90 backdrop-blur-md border-b border-gray-200 fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <i class="fas fa-mobile-alt text-indigo-600 text-2xl mr-2"></i>
+          <span class="text-xl font-bold text-gray-800">PhoneHub</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="/" class="text-gray-600 hover:text-indigo-600 transition">Home</a>
+          <a href="/category.html" class="text-gray-600 hover:text-indigo-600 transition">Category</a>
+          <a href="/detail.html" class="text-gray-600 hover:text-indigo-600 transition">Detail</a>
+          <a href="/cart.html" class="text-gray-600 hover:text-indigo-600 transition">Cart</a>
+          <a href="/checkout.html" class="text-gray-600 hover:text-indigo-600 transition">Checkout</a>
+          <a href="/profile.html" class="text-gray-600 hover:text-indigo-600 transition">Profile</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="p-2 text-gray-600 hover:text-indigo-600">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="p-2 text-gray-600 hover:text-indigo-600">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button class="md:hidden p-2 text-gray-600 hover:text-indigo-600">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-16 px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">The Smartphone Revolution</h1>
+        <p class="text-lg text-gray-600 mb-8">Discover cutting-edge technology with our premium collection of smartphones designed for the modern lifestyle.</p>
+        <div class="flex space-x-4">
+          <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg hover:shadow-indigo-200">
+            Shop Now
+          </button>
+          <button class="border border-gray-300 hover:border-indigo-600 text-gray-700 hover:text-indigo-600 px-6 py-3 rounded-lg font-medium transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1520088096110-20308c23a3cd?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwbW9kZXJuJTIwZGVzaWdufGVufDB8fHxibGFja3wxNzQ0NjMxMTA3fDA&amp;ixlib=rb-4.0.3&amp;q=85" alt="Premium Smartphone" class="w-full max-w-md mx-auto" data-image-keyword="smartphone modern design" data-image-color="black" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section id="featured" class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Featured Products</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden phone-card hover:shadow-lg">
+          <div class="p-4 bg-indigo-50">
+            <img src="https://images.unsplash.com/photo-1517765371796-5bd3a7d30a29?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwyfHxmbGFnc2hpcCUyMHNtYXJ0cGhvbmUlMjBwcmVtaXVtfGVufDB8fHxibGFja3wxNzQ0NjMxMTA3fDA&amp;ixlib=rb-4.0.3&amp;q=85" alt="Flagship Phone" class="w-full h-64 object-contain" data-image-keyword="flagship smartphone premium" data-image-color="black" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">ProMax X9</h3>
+                <p class="text-indigo-600">Flagship Series</p>
+              </div>
+              <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">New</span>
+            </div>
+            <p class="text-gray-600 mt-2 mb-4">6.7" AMOLED, 256GB, 48MP Camera</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-gray-900">$999</span>
+              <button class="text-white bg-indigo-600 hover:bg-indigo-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden phone-card hover:shadow-lg">
+          <div class="p-4 bg-purple-50">
+            <img src="https://images.unsplash.com/photo-1566476927456-446189d7b1ca?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxMHx8bWlkLXJhbmdlJTIwc21hcnRwaG9uZXxlbnwwfHx8cHVycGxlfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85" alt="Mid-range Phone" class="w-full h-64 object-contain" data-image-keyword="mid-range smartphone" data-image-color="purple" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">Lite S8</h3>
+                <p class="text-purple-600">Performance Series</p>
+              </div>
+              <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Popular</span>
+            </div>
+            <p class="text-gray-600 mt-2 mb-4">6.4" OLED, 128GB, 32MP Camera</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-gray-900">$649</span>
+              <button class="text-white bg-indigo-600 hover:bg-indigo-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden phone-card hover:shadow-lg">
+          <div class="p-4 bg-teal-50">
+            <img src="https://images.unsplash.com/photo-1699265837122-7636e128b4b0?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxidWRnZXQlMjBzbWFydHBob25lJTIwYWZmb3JkYWJsZXxlbnwwfHx8dGVhbHwxNzQ0NjMxMTA3fDA&amp;ixlib=rb-4.0.3&amp;q=85" alt="Budget Phone" class="w-full h-64 object-contain" data-image-keyword="budget smartphone affordable" data-image-color="teal" loading="lazy">
+          </div>
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900">Basic A5</h3>
+                <p class="text-teal-600">Essential Series</p>
+              </div>
+              <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Deal</span>
+            </div>
+            <p class="text-gray-600 mt-2 mb-4">6.1" LCD, 64GB, 16MP Camera</p>
+            <div class="flex justify-between items-center">
+              <span class="text-2xl font-bold text-gray-900">$349</span>
+              <button class="text-white bg-indigo-600 hover:bg-indigo-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">Browse Our Collection</h2>
+      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">From flagship models to budget-friendly options, we have the perfect phone for every need.</p>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Category 1 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition p-6 text-center cursor-pointer">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-rocket text-indigo-600 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Flagship</h3>
+          <p class="text-sm text-gray-500">Top-tier performance</p>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition p-6 text-center cursor-pointer">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-balance-scale text-purple-600 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Mid-range</h3>
+          <p class="text-sm text-gray-500">Great value</p>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition p-6 text-center cursor-pointer">
+          <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-wallet text-teal-600 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Budget</h3>
+          <p class="text-sm text-gray-500">Affordable quality</p>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition p-6 text-center cursor-pointer">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-recycle text-red-600 text-xl"></i>
+          </div>
+          <h3 class="font-bold text-gray-900 mb-2">Refurbished</h3>
+          <p class="text-sm text-gray-500">Certified pre-owned</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals Section -->
+  <section id="deals" class="py-16 px-4 bg-indigo-600 text-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Summer Sale - Up to 40% Off</h2>
+          <p class="text-indigo-100 mb-6">Don't miss our biggest sale of the year. Limited time offer on selected models.</p>
+          <div class="flex items-center space-x-2 mb-6">
+            <div class="bg-indigo-700 rounded-lg p-3 text-center">
+              <span class="block text-2xl font-bold" id="days">00</span>
+              <span class="text-xs">Days</span>
+            </div>
+            <div class="bg-indigo-700 rounded-lg p-3 text-center">
+              <span class="block text-2xl font-bold" id="hours">00</span>
+              <span class="text-xs">Hours</span>
+            </div>
+            <div class="bg-indigo-700 rounded-lg p-3 text-center">
+              <span class="block text-2xl font-bold" id="minutes">00</span>
+              <span class="text-xs">Minutes</span>
+            </div>
+            <div class="bg-indigo-700 rounded-lg p-3 text-center">
+              <span class="block text-2xl font-bold" id="seconds">00</span>
+              <span class="text-xs">Seconds</span>
+            </div>
+          </div>
+          <button class="bg-white text-indigo-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition shadow-lg">
+            Shop Deals
+          </button>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1664913920468-e04086b46b61?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHw4fHxkaXNjb3VudGVkJTIwc21hcnRwaG9uZSUyMG9mZmVyfGVufDB8fHx3aGl0ZXwxNzQ0NjMxMTA3fDA&amp;ixlib=rb-4.0.3&amp;q=85" alt="Special Deal Phone" class="w-full max-w-md mx-auto" data-image-keyword="discounted smartphone offer" data-image-color="white" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Why Choose PhoneHub</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-shield-alt text-indigo-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">2-Year Warranty</h3>
+          <p class="text-gray-600">All our products come with comprehensive 24-month warranty coverage.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-truck text-indigo-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Next-Day Delivery</h3>
+          <p class="text-gray-600">Order before 3PM and receive your phone the next working day.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="text-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-exchange-alt text-indigo-600 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Easy Returns</h3>
+          <p class="text-gray-600">30-day return policy if you're not completely satisfied.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-2xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+      <p class="text-gray-600 mb-8">Subscribe to our newsletter for exclusive deals and the latest tech news.</p>
+      <div class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+        <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- Column 1 -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <i class="fas fa-mobile-alt text-indigo-400 mr-2"></i>
+            PhoneHub
+          </h3>
+          <p class="text-gray-400 mb-4">Your trusted destination for premium smartphones at competitive prices.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Shop</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">All Phones</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">New Releases</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Deals</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Trade-In</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Support</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Help Center</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Order Status</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping Info</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Returns</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <p>© 2025 PhoneHub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Countdown timer
+    function updateCountdown() {
+      const now = new Date();
+      const endDate = new Date();
+      endDate.setDate(now.getDate() + 7);
+      
+      const totalSeconds = (endDate - now) / 1000;
+      
+      const days = Math.floor(totalSeconds / 3600 / 24);
+      const hours = Math.floor(totalSeconds / 3600) % 24;
+      const minutes = Math.floor(totalSeconds / 60) % 60;
+      const seconds = Math.floor(totalSeconds) % 60;
+      
+      document.getElementById('days').textContent = days.toString().padStart(2, '0');
+      document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+      document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+      document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    }
+    
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body></html>

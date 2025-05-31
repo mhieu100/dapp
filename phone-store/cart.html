@@ -1,0 +1,337 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>PhoneHub - Shopping Cart</title>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md border-b border-gray-200 fixed w-full z-10">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <i class="fas fa-mobile-alt text-indigo-600 text-2xl mr-2"></i>
+            <span class="text-xl font-bold text-gray-800">PhoneHub</span>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a href="/" class="text-gray-600 hover:text-indigo-600 transition">Home</a>
+            <a href="/category.html" class="text-gray-600 hover:text-indigo-600 transition">Category</a>
+            <a href="/detail.html" class="text-gray-600 hover:text-indigo-600 transition">Detail</a>
+            <a href="/cart.html" class="text-gray-600 hover:text-indigo-600 transition">Cart</a>
+            <a href="/checkout.html" class="text-gray-600 hover:text-indigo-600 transition">Checkout</a>
+            <a href="/profile.html" class="text-gray-600 hover:text-indigo-600 transition">Profile</a>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button class="p-2 text-gray-600 hover:text-indigo-600">
+              <i class="fas fa-search"></i>
+            </button>
+            <button class="p-2 text-indigo-600 relative">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="absolute -top-1 -right-1 bg-indigo-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">3</span>
+            </button>
+            <button class="md:hidden p-2 text-gray-600 hover:text-indigo-600">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Main Content -->
+    <div class="pt-24 pb-12 px-4 max-w-7xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Cart Items -->
+        <div class="w-full lg:w-2/3">
+          <div class="bg-white rounded-xl shadow-sm p-6">
+            <div class="flex justify-between items-center mb-6">
+              <h1 class="text-2xl font-bold text-gray-900">Shopping Cart (3 items)</h1>
+              <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm font-medium">Continue Shopping</a>
+            </div>
+  
+            <!-- Cart Header -->
+            <div class="hidden md:grid grid-cols-12 gap-4 border-b border-gray-200 pb-3 mb-4">
+              <div class="col-span-6 font-medium text-gray-500">Product</div>
+              <div class="col-span-2 font-medium text-gray-500">Price</div>
+              <div class="col-span-2 font-medium text-gray-500">Quantity</div>
+              <div class="col-span-2 font-medium text-gray-500">Total</div>
+            </div>
+  
+            <!-- Cart Item 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 border-b border-gray-200 py-6">
+              <div class="col-span-6 flex">
+                <div class="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center">
+                  <img src="https://images.unsplash.com/photo-1499097828500-fac38e25d327?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNXByb3xlbnwwfHx8fGJsYWNrfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85" alt="iPhone 15 Pro" class="h-20 object-contain" data-image-keyword="iphone 15 pro titanium smartphone" data-image-color="black" loading="lazy">
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-md font-medium text-gray-900">iPhone 15 Pro</h3>
+                  <p class="text-sm text-gray-500">Natural Titanium, 256GB</p>
+                  <button class="mt-2 text-red-600 hover:text-red-800 text-sm flex items-center">
+                    <i class="fas fa-trash-alt mr-1 text-xs"></i> Remove
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <span class="text-gray-900 font-medium">14,500,000₫</span>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <div class="flex items-center border border-gray-300 rounded-md">
+                  <button class="px-3 py-1 text-gray-600 hover:bg-gray-100">
+                    <i class="fas fa-minus text-xs"></i>
+                  </button>
+                  <span class="px-3 py-1 text-gray-900">1</span>
+                  <button class="px-3 py-1 text-gray-600 hover:bg-gray-100">
+                    <i class="fas fa-plus text-xs"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <span class="text-gray-900 font-medium">14,500,000₫</span>
+              </div>
+            </div>
+  
+            <!-- Cart Item 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 border-b border-gray-200 py-6">
+              <div class="col-span-6 flex">
+                <div class="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center">
+                  <img src="https://images.unsplash.com/photo-1661347558973-84da37c242ed?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxzYW1zdW5nJTIwczI0JTIwdWx0cmF8ZW58MHx8fHxibGFja3wxNzQ0NjMxMTA3fDA&amp;ixlib=rb-4.0.3&amp;q=85" alt="Samsung S24 Ultra" class="h-20 object-contain" data-image-keyword="samsung s24 ultra smartphone" data-image-color="black" loading="lazy">
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-md font-medium text-gray-900">Galaxy S24 Ultra</h3>
+                  <p class="text-sm text-gray-500">Black, 512GB</p>
+                  <button class="mt-2 text-red-600 hover:text-red-800 text-sm flex items-center">
+                    <i class="fas fa-trash-alt mr-1 text-xs"></i> Remove
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <span class="text-gray-900 font-medium">18,200,000₫</span>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <div class="flex items-center border border-gray-300 rounded-md">
+                  <button class="px-3 py-1 text-gray-600 hover:bg-gray-100">
+                    <i class="fas fa-minus text-xs"></i>
+                  </button>
+                  <span class="px-3 py-1 text-gray-900">1</span>
+                  <button class="px-3 py-1 text-gray-600 hover:bg-gray-100">
+                    <i class="fas fa-plus text-xs"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <span class="text-gray-900 font-medium">18,200,000₫</span>
+              </div>
+            </div>
+  
+            <!-- Cart Item 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4 py-6">
+              <div class="col-span-6 flex">
+                <div class="w-24 h-24 bg-gray-100 rounded-lg flex-shrink-0 flex items-center justify-center">
+                  <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxhaXJwb2RzJTIwcHJvfGVufDB8fHx8YmxhY2t8MTc0NDYzMTEwN3ww&amp;ixlib=rb-4.0.3&amp;q=85" alt="AirPods Pro" class="h-20 object-contain" data-image-keyword="airpods pro wireless earbuds" data-image-color="white" loading="lazy">
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-md font-medium text-gray-900">AirPods Pro (2nd Gen)</h3>
+                  <p class="text-sm text-gray-500">White</p>
+                  <button class="mt-2 text-red-600 hover:text-red-800 text-sm flex items-center">
+                    <i class="fas fa-trash-alt mr-1 text-xs"></i> Remove
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <span class="text-gray-900 font-medium">5,990,000₫</span>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <div class="flex items-center border border-gray-300 rounded-md">
+                  <button class="px-3 py-1 text-gray-600 hover:bg-gray-100">
+                    <i class="fas fa-minus text-xs"></i>
+                  </button>
+                  <span class="px-3 py-1 text-gray-900">2</span>
+                  <button class="px-3 py-1 text-gray-600 hover:bg-gray-100">
+                    <i class="fas fa-plus text-xs"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-span-2 flex items-center">
+                <span class="text-gray-900 font-medium">11,980,000₫</span>
+              </div>
+            </div>
+  
+            <!-- Coupon Code -->
+            <div class="flex flex-col sm:flex-row justify-between items-center border-t border-gray-200 pt-6 mt-6">
+              <div class="w-full sm:w-1/2 mb-4 sm:mb-0">
+                <label for="coupon" class="sr-only">Coupon code</label>
+                <div class="flex">
+                  <input type="text" id="coupon" placeholder="Coupon code" class="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                  <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md font-medium">Apply</button>
+                </div>
+              </div>
+              <button class="w-full sm:w-auto bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md font-medium">
+                Update Cart
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Order Summary -->
+        <div class="w-full lg:w-1/3">
+          <div class="bg-white rounded-xl shadow-sm p-6 sticky top-24">
+            <h2 class="text-xl font-bold text-gray-900 mb-6">Order Summary</h2>
+            
+            <div class="space-y-3 mb-6">
+              <div class="flex justify-between">
+                <span class="text-gray-600">Subtotal</span>
+                <span class="text-gray-900 font-medium">44,680,000₫</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Shipping</span>
+                <span class="text-gray-900 font-medium">Free</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">Tax</span>
+                <span class="text-gray-900 font-medium">4,468,000₫</span>
+              </div>
+              <div class="flex justify-between border-t border-gray-200 pt-3">
+                <span class="text-gray-600">Discount</span>
+                <span class="text-green-600 font-medium">-1,000,000₫</span>
+              </div>
+            </div>
+  
+            <div class="flex justify-between items-center border-t border-gray-200 pt-4 mb-6">
+              <span class="text-lg font-bold text-gray-900">Total</span>
+              <span class="text-2xl font-bold text-indigo-600">48,148,000₫</span>
+            </div>
+  
+            <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-4 rounded-lg font-medium transition flex items-center justify-center">
+              Proceed to Checkout
+            </button>
+  
+            <div class="mt-4 text-center">
+              <p class="text-sm text-gray-500">or</p>
+              <button class="mt-2 text-indigo-600 hover:text-indigo-800 text-sm font-medium flex items-center justify-center w-full">
+                <i class="fas fa-percentage mr-1"></i> Checkout with 0% Installment
+              </button>
+            </div>
+  
+            <div class="mt-6 pt-6 border-t border-gray-200">
+              <h3 class="text-sm font-medium text-gray-900 mb-2">Accepted Payment Methods</h3>
+              <div class="flex flex-wrap gap-2">
+                <div class="bg-gray-100 p-2 rounded">
+                  <i class="fab fa-cc-visa text-2xl text-blue-800"></i>
+                </div>
+                <div class="bg-gray-100 p-2 rounded">
+                  <i class="fab fa-cc-mastercard text-2xl text-red-600"></i>
+                </div>
+                <div class="bg-gray-100 p-2 rounded">
+                  <i class="fab fa-cc-jcb text-2xl text-orange-600"></i>
+                </div>
+                <div class="bg-gray-100 p-2 rounded">
+                  <i class="fas fa-money-bill-wave text-2xl text-green-600"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-lg font-bold mb-4">PhoneHub</h3>
+            <p class="text-gray-400 mb-4">The best place to buy the latest smartphones and accessories.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Shop</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white">Smartphones</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Tablets</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Accessories</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Deals</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Support</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Shipping</a></li>
+              <li><a href="#" class="text-gray-400 hover:text-white">Returns</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+            <p class="text-gray-400 mb-4">Subscribe to get updates on new products and special offers.</p>
+            <div class="flex">
+              <input type="email" placeholder="Your email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-r-md">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>© 2025 PhoneHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  
+    <script>
+      // Quantity buttons functionality
+      document.querySelectorAll('.fa-minus').forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          const quantityElement = this.parentElement.nextElementSibling;
+          let quantity = parseInt(quantityElement.textContent);
+          if (quantity > 1) {
+            quantityElement.textContent = quantity - 1;
+          }
+        });
+      });
+  
+      document.querySelectorAll('.fa-plus').forEach(button => {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          const quantityElement = this.parentElement.previousElementSibling;
+          let quantity = parseInt(quantityElement.textContent);
+          quantityElement.textContent = quantity + 1;
+        });
+      });
+  
+      // Image zoom functionality
+      const mainImage = document.getElementById('mainImage');
+      if (mainImage) {
+        mainImage.addEventListener('click', function() {
+          this.classList.toggle('zoomed');
+        });
+      }
+  
+      // Thumbnail click functionality
+      document.querySelectorAll('.image-gallery-thumbnail img').forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+          const mainImage = document.getElementById('mainImage');
+          if (mainImage) {
+            mainImage.src = this.src;
+            mainImage.alt = this.alt;
+            document.querySelectorAll('.image-gallery-thumbnail').forEach(el => {
+              el.classList.remove('active');
+            });
+            this.parentElement.classList.add('active');
+          }
+        });
+      });
+    </script>
+  
+  </body></html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>PhoneHub - Product Detail</title>
+    <style>
+        .image-gallery-thumbnail.active {
+            border: 2px solid #6366f1;
+        }
+
+        .zoomable-image {
+            cursor: zoom-in;
+            transition: transform 0.3s;
+        }
+
+        .zoomable-image.zoomed {
+            transform: scale(1.5);
+            cursor: zoom-out;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md border-b border-gray-200 fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-mobile-alt text-indigo-600 text-2xl mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">PhoneHub</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="/" class="text-gray-600 hover:text-indigo-600 transition">Home</a>
+                    <a href="/category.html" class="text-gray-600 hover:text-indigo-600 transition">Category</a>
+                    <a href="/detail.html" class="text-gray-600 hover:text-indigo-600 transition">Detail</a>
+                    <a href="/cart.html" class="text-gray-600 hover:text-indigo-600 transition">Cart</a>
+                    <a href="/checkout.html" class="text-gray-600 hover:text-indigo-600 transition">Checkout</a>
+                    <a href="/profile.html" class="text-gray-600 hover:text-indigo-600 transition">Profile</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="p-2 text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="p-2 text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="md:hidden p-2 text-gray-600 hover:text-indigo-600">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="pt-24 pb-12 px-4 max-w-7xl mx-auto">
+        <!-- Breadcrumbs -->
+        <div class="flex items-center text-sm text-gray-600 mb-6">
+            <a href="#" class="hover:text-indigo-600">Home</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <a href="#" class="hover:text-indigo-600">Smartphones</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <a href="#" class="hover:text-indigo-600">Apple</a>
+            <i class="fas fa-chevron-right mx-2 text-xs"></i>
+            <span class="text-gray-400">iPhone 15 Pro</span>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Product Images -->
+            <div class="w-full lg:w-1/2">
+                <!-- Main Image -->
+                <div class="bg-white rounded-xl shadow-sm p-4 mb-4 flex items-center justify-center h-96">
+                    <img src="https://images.unsplash.com/photo-1499097828500-fac38e25d327?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNXByb3xlbnwwfHx8fGJsYWNrfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85"
+                        alt="iPhone 15 Pro" class="h-full object-contain zoomable-image"
+                        data-image-keyword="iphone 15 pro titanium smartphone" data-image-color="black" id="mainImage"
+                        loading="lazy">
+                </div>
+
+                <!-- Thumbnails -->
+                <div class="grid grid-cols-5 gap-3">
+                    <div class="bg-white rounded-lg shadow-sm p-2 cursor-pointer image-gallery-thumbnail active">
+                        <img src="https://images.unsplash.com/photo-1600933435972-e4a4a40a4abd?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNXByb3xlbnwwfHx8fGJsYWNrfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85"
+                            alt="iPhone 15 Pro Front" class="w-full h-20 object-contain"
+                            data-image-keyword="iphone 15 pro front view" data-image-color="black" loading="lazy">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-2 cursor-pointer image-gallery-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1516395614785-58f599409d3c?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNXByb3xlbnwwfHx8fGJsYWNrfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85"
+                            alt="iPhone 15 Pro Back" class="w-full h-20 object-contain"
+                            data-image-keyword="iphone 15 pro back view" data-image-color="black" loading="lazy">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-2 cursor-pointer image-gallery-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1511227499331-25c621db940e?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNXByb3xlbnwwfHx8fGJsYWNrfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85"
+                            alt="iPhone 15 Pro Side" class="w-full h-20 object-contain"
+                            data-image-keyword="iphone 15 pro side view" data-image-color="black" loading="lazy">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-2 cursor-pointer image-gallery-thumbnail">
+                        <img src="https://images.unsplash.com/photo-1496559249665-c7e2874707ea?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNXByb3xlbnwwfHx8fGJsYWNrfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85"
+                            alt="iPhone 15 Pro Camera" class="w-full h-20 object-contain"
+                            data-image-keyword="iphone 15 pro camera detail" data-image-color="black" loading="lazy">
+                    </div>
+                    <div
+                        class="bg-white rounded-lg shadow-sm p-2 cursor-pointer image-gallery-thumbnail flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-video text-indigo-600 text-xl mb-1"></i>
+                            <span class="text-xs text-gray-600">360° View</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="w-full lg:w-1/2">
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h1 class="text-2xl font-bold text-gray-900">iPhone 15 Pro</h1>
+                            <p class="text-indigo-600">Apple</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2 py-0.5 rounded">In
+                            Stock</span>
+                    </div>
+
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400 text-sm mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="text-gray-500 text-sm">(142 reviews)</span>
+                        <a href="#reviews" class="text-indigo-600 text-sm ml-2 hover:underline">View all</a>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex items-baseline">
+                            <span class="text-3xl font-bold text-gray-900">14,500,000₫</span>
+                            <span class="text-lg text-gray-500 line-through ml-2">15,990,000₫</span>
+                            <span class="bg-red-100 text-red-800 text-xs font-medium ml-2 px-2 py-0.5 rounded">9%
+                                OFF</span>
+                        </div>
+                        <div class="text-green-600 text-sm mt-1">
+                            <i class="fas fa-tag mr-1"></i> Special promotion: 0% installment for 12 months
+                        </div>
+                    </div>
+
+                    <div class="border-t border-b border-gray-200 py-4 mb-6">
+                        <div class="flex items-center text-sm text-gray-600 mb-2">
+                            <i class="fas fa-box-open text-indigo-500 mr-2"></i>
+                            <span>Free shipping for orders over 500,000₫</span>
+                        </div>
+                        <div class="flex items-center text-sm text-gray-600">
+                            <i class="fas fa-undo-alt text-indigo-500 mr-2"></i>
+                            <span>30-day return policy</span>
+                        </div>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="mb-6">
+                        <h3 class="text-sm font-medium text-gray-900 mb-2">Color: <span id="selectedColor"
+                                class="font-normal">Natural Titanium</span></h3>
+                        <div class="flex space-x-2">
+                            <button
+                                class="w-8 h-8 rounded-full bg-gray-200 border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                data-color="Natural Titanium"></button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-blue-900 border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                data-color="Blue Titanium"></button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-gray-800 border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                data-color="Black Titanium"></button>
+                            <button
+                                class="w-8 h-8 rounded-full bg-white border-2 border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                                data-color="White Titanium"></button>
+                        </div>
+                    </div>
+
+                    <!-- Storage Selection -->
+                    <div class="mb-6">
+                        <h3 class="text-sm font-medium text-gray-900 mb-2">Storage: <span id="selectedStorage"
+                                class="font-normal">128GB</span></h3>
+                        <div class="flex space-x-2">
+                            <button
+                                class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                data-storage="128GB">128GB</button>
+                            <button
+                                class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                data-storage="256GB">256GB</button>
+                            <button
+                                class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                data-storage="512GB">512GB</button>
+                            <button
+                                class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"
+                                data-storage="1TB">1TB</button>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-3 mb-6">
+                        <button
+                            class="flex-1 bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-4 rounded-lg font-medium transition flex items-center justify-center">
+                            <i class="fas fa-shopping-cart mr-2"></i> Add to Cart
+                        </button>
+                        <button
+                            class="flex-1 bg-gray-900 hover:bg-gray-800 text-white py-3 px-4 rounded-lg font-medium transition flex items-center justify-center">
+                            <i class="fas fa-bolt mr-2"></i> Buy Now
+                        </button>
+                    </div>
+
+                    <div class="flex justify-center">
+                        <button class="text-indigo-600 hover:text-indigo-800 text-sm font-medium flex items-center">
+                            <i class="fas fa-percentage mr-1"></i> See installment options
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Details Tabs -->
+        <div class="mt-8">
+            <div class="border-b border-gray-200">
+                <nav class="-mb-px flex space-x-8">
+                    <button
+                        class="border-b-2 border-indigo-500 text-indigo-600 whitespace-nowrap py-4 px-1 font-medium text-sm">Description</button>
+                    <button
+                        class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 font-medium text-sm">Specifications</button>
+                    <button
+                        class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 font-medium text-sm">Reviews</button>
+                </nav>
+            </div>
+
+            <div class="bg-white rounded-b-xl shadow-sm p-6">
+                <h2 class="text-xl font-bold text-gray-900 mb-4">Product Description</h2>
+                <p class="text-gray-600 mb-6">
+                    The iPhone 15 Pro represents the pinnacle of Apple's smartphone technology, featuring a
+                    revolutionary titanium design, the powerful A17 Pro chip, and an advanced camera system. With its
+                    aerospace-grade titanium construction, this device offers exceptional durability while being lighter
+                    than previous models.
+                </p>
+
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Key Features</h3>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-6">
+                    <li>6.1" Super Retina XDR display with ProMotion technology</li>
+                    <li>A17 Pro chip with 6-core CPU and 5-core GPU</li>
+                    <li>Pro camera system with 48MP Main, 12MP Ultra Wide, and 12MP Telephoto</li>
+                    <li>Titanium design with textured matte glass back</li>
+                    <li>All-day battery life and fast charging support</li>
+                    <li>iOS 17 with powerful new features</li>
+                </ul>
+
+                <h3 class="text-lg font-bold text-gray-900 mb-3">Technical Specifications</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">Display</span>
+                        <span class="text-gray-900">6.1" Super Retina XDR, 2556x1179, 460ppi</span>
+                    </div>
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">Processor</span>
+                        <span class="text-gray-900">A17 Pro chip, 6-core CPU, 5-core GPU</span>
+                    </div>
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">Memory</span>
+                        <span class="text-gray-900">8GB RAM</span>
+                    </div>
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">Storage</span>
+                        <span class="text-gray-900">128GB/256GB/512GB/1TB</span>
+                    </div>
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">Rear Camera</span>
+                        <span class="text-gray-900">Triple 48MP + 12MP + 12MP</span>
+                    </div>
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">Front Camera</span>
+                        <span class="text-gray-900">12MP TrueDepth</span>
+                    </div>
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">Battery</span>
+                        <span class="text-gray-900">Up to 23 hours video playback</span>
+                    </div>
+                    <div class="flex">
+                        <span class="text-gray-500 w-32">OS</span>
+                        <span class="text-gray-900">iOS 17</span>
+                    </div>
+                </div>
+
+                <!-- Reviews Section -->
+                <div id="reviews" class="mt-8">
+                    <h2 class="text-xl font-bold text-gray-900 mb-6">Customer Reviews</h2>
+
+                    <div class="flex items-center mb-6">
+                        <div class="mr-4">
+                            <span class="text-4xl font-bold">4.7</span>
+                            <span class="text-gray-500">/5</span>
+                        </div>
+                        <div>
+                            <div class="flex items-center mb-1">
+                                <div class="flex text-yellow-400 text-sm mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-500 text-sm">142 reviews</span>
+                            </div>
+                            <div class="w-48 bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Item -->
+                    <div class="border-b border-gray-200 pb-6 mb-6"></div>
+                    <div class="flex justify-between mb-2">
+                        <div>
+                            <h4 class="font-medium text-gray-900">Michael Johnson</h4>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="text-gray-500 text-sm">2 days ago</span>
+                    </div>
+                    <p class="text-gray-600 mb-2">The titanium build feels amazing in hand and the camera system is
+                        incredible. Night mode photos look like they were taken in daylight!</p>
+                    <div class="flex space-x-2">
+                        <img src="https://images.unsplash.com/photo-1511227499331-25c621db940e?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxpcGhvbmUlMjAxNXByb3xlbnwwfHx8fGJsYWNrfDE3NDQ2MzExMDd8MA&amp;ixlib=rb-4.0.3&amp;q=85"
+                            alt="Review photo" class="w-16 h-16 object-cover rounded"
+                            data-image-keyword="iphone 15 pro review photo" data-image-color="black" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Review Item -->
+                <div class="border-b border-gray-200 pb-6 mb-6">
+                    <div class="flex justify-between mb-2">
+                        <div>
+                            <h4 class="font-medium text-gray-900">Sarah Williams</h4>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <span class="text-gray-500 text-sm">1 week ago</span>
+                    </div>
+                    <p class="text-gray-600">The battery life is impressive and the 120Hz display makes everything so
+                        smooth. Only complaint is the price, but you get what you pay for.</p>
+                </div>
+
+                <!-- Review Form -->
+                <div class="mt-8">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Write a Review</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2">Rating</label>
+                            <div class="flex text-2xl text-gray-300">
+                                <i class="fas fa-star hover:text-yellow-400 cursor-pointer"></i>
+                                <i class="fas fa-star hover:text-yellow-400 cursor-pointer"></i>
+                                <i class="fas fa-star hover:text-yellow-400 cursor-pointer"></i>
+                                <i class="fas fa-star hover:text-yellow-400 cursor-pointer"></i>
+                                <i class="fas fa-star hover:text-yellow-400 cursor-pointer"></i>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2">Review Title</label>
+                            <input type="text"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2">Your Review</label>
+                            <textarea rows="4"
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-md font-medium">Submit
+                            Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-mobile-alt text-indigo-400 mr-2"></i>
+                        PhoneHub
+                    </h3>
+                    <p class="text-gray-400 mb-4">Your trusted destination for premium smartphones at competitive
+                        prices.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Shop</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">All Phones</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">New Releases</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Deals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Trade-In</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Order Status</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 PhoneHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
