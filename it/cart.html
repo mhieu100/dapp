@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="en" data-id="v0b7dfn6" data-line="1-351"><head data-id="u1x7ieer" data-line="1-50">
+    <meta charset="UTF-8" data-id="4yydezq7" data-line="2-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-id="sblm10sl" data-line="3-3">
+    <script src="https://cdn.tailwindcss.com" data-id="jrg4to7b" data-line="4-4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" data-id="r147jc7w" data-line="5-5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" data-id="mzkp9zdg" data-line="6-6">
+    <script data-id="ffo2uje6" data-line="7-24">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1A73E8',
+              primaryLight: '#4285F4',
+              primaryLighter: '#5E97F6',
+              primaryLightest: '#8AB4F8',
+              primaryPale: '#C6DAFC',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style data-id="pc4udztz" data-line="25-49">
+      @media (max-width: 767px) {
+        .cart-item-mobile {
+          display: block;
+        }
+        .cart-item-desktop {
+          display: none;
+        }
+      }
+      @media (min-width: 768px) {
+        .cart-item-mobile {
+          display: none;
+        }
+        .cart-item-desktop {
+          display: table-row;
+        }
+      }
+      .quantity-btn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50" data-id="ojjhzomg" data-line="51-351">
+    <div class="container mx-auto px-4 py-8" data-id="v3vvxagj" data-line="52-326">
+      <!-- Breadcrumbs -->
+      <nav class="mb-6 text-sm text-gray-600" aria-label="Breadcrumb" data-id="nv0rtr4b" data-line="54-66">
+        <ol class="flex items-center space-x-2" data-id="jwnr5n0f" data-line="55-65">
+          <li data-id="bz5c3ygw" data-line="56-58">
+            <a href="#" class="hover:text-primary" data-id="724qnkkn" data-line="57-57">Home</a>
+          </li>
+          <li data-id="pg96hc0p" data-line="59-61">
+            <i class="fas fa-chevron-right text-xs" data-id="nu6cgh12" data-line="60-60"></i>
+          </li>
+          <li data-id="mmiac5hg" data-line="62-64">
+            <a href="#" class="hover:text-primary" data-id="ynv98rw1" data-line="63-63">Cart</a>
+          </li>
+        </ol>
+      </nav>
+  
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6" data-id="gudxzzk2" data-line="68-68">Your Shopping Cart</h1>
+  
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" data-id="ox1n9wl0" data-line="70-255">
+        <!-- Desktop Table -->
+        <div class="hidden md:block" data-id="7kinjckw" data-line="72-151">
+          <table class="w-full" data-id="2dehr1jn" data-line="73-150">
+            <thead class="bg-gray-50" data-id="t95m7wia" data-line="74-82">
+              <tr class="text-left text-sm font-medium text-gray-500 uppercase tracking-wider" data-id="c5cu0id1" data-line="75-81">
+                <th class="px-6 py-3" data-id="5xyr3dfq" data-line="76-76">Product</th>
+                <th class="px-6 py-3" data-id="6rfyph7o" data-line="77-77">Price</th>
+                <th class="px-6 py-3" data-id="clup28wh" data-line="78-78">Quantity</th>
+                <th class="px-6 py-3" data-id="hnnhytvj" data-line="79-79">Total</th>
+                <th class="px-6 py-3" data-id="vxzgvku1" data-line="80-80"></th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200" data-id="ukk6mb2v" data-line="83-149">
+              <!-- Cart Item 1 -->
+              <tr class="cart-item-desktop" data-id="dvc4rivk" data-line="85-115">
+                <td class="px-6 py-4 whitespace-nowrap" data-id="jis2wtrw" data-line="86-96">
+                  <div class="flex items-center" data-id="nomvrs8o" data-line="87-95">
+                    <div class="flex-shrink-0 h-16 w-16" data-id="bfwylkmj" data-line="88-90">
+                      <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Smartphone front" class="h-full w-full object-contain" data-id="a6dh2tha" data-line="89-89">
+                    </div>
+                    <div class="ml-4" data-id="b3qv6t83" data-line="91-94">
+                      <div class="text-sm font-medium text-gray-900" data-id="abhkvl2x" data-line="92-92">Smartphone X Pro</div>
+                      <div class="text-sm text-gray-500" data-id="8ev4jwk9" data-line="93-93">Color: Black | Storage: 128GB</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900" data-id="twesjt3l" data-line="97-97">$799.00</td>
+                <td class="px-6 py-4 whitespace-nowrap" data-id="jd4vwiz9" data-line="98-108">
+                  <div class="flex items-center" data-id="aylr0mf0" data-line="99-107">
+                    <button class="quantity-btn border border-gray-300 rounded-l-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Decrease quantity" data-id="gz8y86cn" data-line="100-102">
+                      <i class="fas fa-minus text-xs" data-id="cxf9t62y" data-line="101-101"></i>
+                    </button>
+                    <input type="number" value="1" min="1" max="10" class="w-12 h-8 text-center border-t border-b border-gray-300" aria-label="Quantity" data-id="ekrz4vln" data-line="103-103">
+                    <button class="quantity-btn border border-gray-300 rounded-r-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Increase quantity" data-id="19et0q4x" data-line="104-106">
+                      <i class="fas fa-plus text-xs" data-id="gwz96hsd" data-line="105-105"></i>
+                    </button>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900" data-id="4t6n7ofa" data-line="109-109">$799.00</td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium" data-id="ona15h0b" data-line="110-114">
+                  <button class="text-red-600 hover:text-red-900" aria-label="Remove item" data-id="xyj3wkq0" data-line="111-113">
+                    <i class="fas fa-trash-alt" data-id="rps0lo77" data-line="112-112"></i>
+                  </button>
+                </td>
+              </tr>
+  
+              <!-- Cart Item 2 -->
+              <tr class="cart-item-desktop" data-id="9v0yn3ym" data-line="118-148">
+                <td class="px-6 py-4 whitespace-nowrap" data-id="xpg10fps" data-line="119-129">
+                  <div class="flex items-center" data-id="rvot7i1w" data-line="120-128">
+                    <div class="flex-shrink-0 h-16 w-16" data-id="lz5y7l3e" data-line="121-123">
+                      <img src="https://images.unsplash.com/photo-1623393945964-8f5d573f9358" alt="Phone case" class="h-full w-full object-contain" data-id="z19by1up" data-line="122-122">
+                    </div>
+                    <div class="ml-4" data-id="m1q8t7gg" data-line="124-127">
+                      <div class="text-sm font-medium text-gray-900" data-id="o9u52iuv" data-line="125-125">Protective Case</div>
+                      <div class="text-sm text-gray-500" data-id="jn3ucey4" data-line="126-126">Color: Black</div>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900" data-id="hsucep6d" data-line="130-130">$39.99</td>
+                <td class="px-6 py-4 whitespace-nowrap" data-id="o3d1isbo" data-line="131-141">
+                  <div class="flex items-center" data-id="77hbvdbq" data-line="132-140">
+                    <button class="quantity-btn border border-gray-300 rounded-l-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Decrease quantity" data-id="hso82ilx" data-line="133-135">
+                      <i class="fas fa-minus text-xs" data-id="e9xov6gu" data-line="134-134"></i>
+                    </button>
+                    <input type="number" value="2" min="1" max="10" class="w-12 h-8 text-center border-t border-b border-gray-300" aria-label="Quantity" data-id="kk98k7f4" data-line="136-136">
+                    <button class="quantity-btn border border-gray-300 rounded-r-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Increase quantity" data-id="ylkvi111" data-line="137-139">
+                      <i class="fas fa-plus text-xs" data-id="b2h8wg8n" data-line="138-138"></i>
+                    </button>
+                  </div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900" data-id="4ml481i3" data-line="142-142">$79.98</td>
+                <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium" data-id="77tinpw5" data-line="143-147">
+                  <button class="text-red-600 hover:text-red-900" aria-label="Remove item" data-id="iwhdsqhu" data-line="144-146">
+                    <i class="fas fa-trash-alt" data-id="3316fb9i" data-line="145-145"></i>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <!-- Mobile Table -->
+        <div class="md:hidden" data-id="gtjlx4ew" data-line="154-220">
+          <!-- Cart Item 1 Mobile -->
+          <div class="cart-item-mobile p-4 border-b border-gray-200" data-id="z99k1gsr" data-line="156-186">
+            <div class="flex items-start" data-id="472rcgs0" data-line="157-185">
+              <div class="flex-shrink-0 h-20 w-20" data-id="swj4t335" data-line="158-160">
+                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Smartphone front" class="h-full w-full object-contain" data-id="ri2xg1dp" data-line="159-159">
+              </div>
+              <div class="ml-4 flex-1" data-id="g2qn9af3" data-line="161-184">
+                <div class="flex justify-between" data-id="cozm6f2h" data-line="162-170">
+                  <div data-id="7zgrlyla" data-line="163-166">
+                    <div class="text-sm font-medium text-gray-900" data-id="800fgrqt" data-line="164-164">Smartphone X Pro</div>
+                    <div class="text-xs text-gray-500 mt-1" data-id="vql94sgg" data-line="165-165">Color: Black | Storage: 128GB</div>
+                  </div>
+                  <button class="text-red-600 hover:text-red-900" aria-label="Remove item" data-id="a0dk3h4a" data-line="167-169">
+                    <i class="fas fa-trash-alt" data-id="h5ukp7gv" data-line="168-168"></i>
+                  </button>
+                </div>
+                
+                <div class="mt-2 flex items-center justify-between" data-id="1ffeteq9" data-line="172-183">
+                  <div class="text-sm font-medium text-gray-900" data-id="vz1f0spu" data-line="173-173">$799.00</div>
+                  <div class="flex items-center" data-id="azqz0b6x" data-line="174-182">
+                    <button class="quantity-btn border border-gray-300 rounded-l-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Decrease quantity" data-id="t6i10v9t" data-line="175-177">
+                      <i class="fas fa-minus text-xs" data-id="bpt850dm" data-line="176-176"></i>
+                    </button>
+                    <input type="number" value="1" min="1" max="10" class="w-10 h-8 text-center border-t border-b border-gray-300" aria-label="Quantity" data-id="wr7vse44" data-line="178-178">
+                    <button class="quantity-btn border border-gray-300 rounded-r-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Increase quantity" data-id="9n5gn2lu" data-line="179-181">
+                      <i class="fas fa-plus text-xs" data-id="za3uf2u1" data-line="180-180"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Cart Item 2 Mobile -->
+          <div class="cart-item-mobile p-4 border-b border-gray-200" data-id="dlx6b0ug" data-line="189-219">
+            <div class="flex items-start" data-id="7dxhnjyj" data-line="190-218">
+              <div class="flex-shrink-0 h-20 w-20" data-id="0ucmvqny" data-line="191-193">
+                <img src="https://images.unsplash.com/photo-1623393945964-8f5d573f9358" alt="Phone case" class="h-full w-full object-contain" data-id="7d15yyoh" data-line="192-192">
+              </div>
+              <div class="ml-4 flex-1" data-id="k5p0ina9" data-line="194-217">
+                <div class="flex justify-between" data-id="v8o4n3ck" data-line="195-203">
+                  <div data-id="wk9ovr9a" data-line="196-199">
+                    <div class="text-sm font-medium text-gray-900" data-id="rpc68gdz" data-line="197-197">Protective Case</div>
+                    <div class="text-xs text-gray-500 mt-1" data-id="9lgunscy" data-line="198-198">Color: Black</div>
+                  </div>
+                  <button class="text-red-600 hover:text-red-900" aria-label="Remove item" data-id="ftcuflv4" data-line="200-202">
+                    <i class="fas fa-trash-alt" data-id="1v8iixs4" data-line="201-201"></i>
+                  </button>
+                </div>
+                
+                <div class="mt-2 flex items-center justify-between" data-id="smhhmsj7" data-line="205-216">
+                  <div class="text-sm font-medium text-gray-900" data-id="lss4lz36" data-line="206-206">$39.99</div>
+                  <div class="flex items-center" data-id="qqll1n3a" data-line="207-215">
+                    <button class="quantity-btn border border-gray-300 rounded-l-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Decrease quantity" data-id="ka9el2b2" data-line="208-210">
+                      <i class="fas fa-minus text-xs" data-id="4lx6jl5c" data-line="209-209"></i>
+                    </button>
+                    <input type="number" value="2" min="1" max="10" class="w-10 h-8 text-center border-t border-b border-gray-300" aria-label="Quantity" data-id="rey5qnet" data-line="211-211">
+                    <button class="quantity-btn border border-gray-300 rounded-r-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Increase quantity" data-id="nsqfyzip" data-line="212-214">
+                      <i class="fas fa-plus text-xs" data-id="6bj8ukve" data-line="213-213"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Order Summary -->
+        <div class="p-6 border-t border-gray-200 bg-gray-50" data-id="5qh55avn" data-line="223-254">
+          <h2 class="text-lg font-medium text-gray-900 mb-4" data-id="z2gekcm8" data-line="224-224">Order Summary</h2>
+          <div class="space-y-3" data-id="6xtp5gtx" data-line="225-242">
+            <div class="flex justify-between" data-id="gdzjcjd6" data-line="226-229">
+              <span class="text-sm text-gray-600" data-id="3ikloq4o" data-line="227-227">Subtotal (3 items)</span>
+              <span class="text-sm font-medium text-gray-900" data-id="newe901s" data-line="228-228">$878.98</span>
+            </div>
+            <div class="flex justify-between" data-id="15tav3gg" data-line="230-233">
+              <span class="text-sm text-gray-600" data-id="9k6jop8g" data-line="231-231">Shipping</span>
+              <span class="text-sm font-medium text-gray-900" data-id="kjyvsxjk" data-line="232-232">Free</span>
+            </div>
+            <div class="flex justify-between" data-id="rawtd5fe" data-line="234-237">
+              <span class="text-sm text-gray-600" data-id="lw2fas7i" data-line="235-235">Tax</span>
+              <span class="text-sm font-medium text-gray-900" data-id="60u38tsx" data-line="236-236">$70.32</span>
+            </div>
+            <div class="flex justify-between pt-3 border-t border-gray-200" data-id="xr0i2kqa" data-line="238-241">
+              <span class="text-base font-medium text-gray-900" data-id="80wtvzth" data-line="239-239">Total</span>
+              <span class="text-base font-bold text-gray-900" data-id="8k6o9x18" data-line="240-240">$949.30</span>
+            </div>
+          </div>
+  
+          <div class="mt-6 space-y-3" data-id="x8pfuc09" data-line="244-253">
+            <button class="w-full bg-primary hover:bg-primaryLight text-white py-3 px-6 rounded-lg font-medium flex items-center justify-center space-x-2" data-id="5wpvj6i5" data-line="245-248">
+              <i class="fas fa-lock" data-id="8uv3ab04" data-line="246-246"></i>
+              <span data-id="9fzhu35t" data-line="247-247">Proceed to Checkout</span>
+            </button>
+            <button class="w-full border border-primary text-primary hover:bg-primaryPale py-3 px-6 rounded-lg font-medium flex items-center justify-center space-x-2" data-id="7cqr1fuh" data-line="249-252">
+              <i class="fas fa-arrow-left" data-id="9tqjph5j" data-line="250-250"></i>
+              <span data-id="jdfaftmy" data-line="251-251">Continue Shopping</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Recommended Products -->
+      <div class="mt-16" data-id="ww5exoz3" data-line="258-325">
+        <h2 class="text-xl font-bold text-gray-900 mb-6" data-id="5twmolr3" data-line="259-259">Recommended for You</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" data-id="2jikjaef" data-line="260-324">
+          <!-- Product 1 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-id="fog2j6te" data-line="262-275">
+            <div class="p-4" data-id="rjgb6mm7" data-line="263-265">
+              <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="Wireless earbuds" class="w-full h-40 object-contain" data-id="42qqfok1" data-line="264-264">
+            </div>
+            <div class="p-4 pt-0" data-id="k0pfc99g" data-line="266-274">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="oij89tmk" data-line="267-267">Wireless Earbuds</h3>
+              <div class="flex justify-between items-center" data-id="64nz5v20" data-line="268-273">
+                <span class="font-bold text-gray-900" data-id="wekohqr8" data-line="269-269">$129.99</span>
+                <button class="text-primary hover:text-primaryLight" aria-label="Add to cart" data-id="pxu23rz3" data-line="270-272">
+                  <i class="fas fa-plus-circle" data-id="g4itsv7w" data-line="271-271"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Product 2 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-id="qe6cdz36" data-line="278-291">
+            <div class="p-4" data-id="9vhxcpuv" data-line="279-281">
+              <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50" alt="Wireless charger" class="w-full h-40 object-contain" data-id="rr8pv57h" data-line="280-280">
+            </div>
+            <div class="p-4 pt-0" data-id="uo5qun4t" data-line="282-290">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="oma0u3o4" data-line="283-283">Wireless Charger</h3>
+              <div class="flex justify-between items-center" data-id="qb8d5o1y" data-line="284-289">
+                <span class="font-bold text-gray-900" data-id="6qx0xc6g" data-line="285-285">$59.99</span>
+                <button class="text-primary hover:text-primaryLight" aria-label="Add to cart" data-id="d3kr2obg" data-line="286-288">
+                  <i class="fas fa-plus-circle" data-id="rogqpbp3" data-line="287-287"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Product 3 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-id="rku5xkue" data-line="294-307">
+            <div class="p-4" data-id="ikyv5joi" data-line="295-297">
+              <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553" alt="Screen protector" class="w-full h-40 object-contain" data-id="5vfc4orn" data-line="296-296">
+            </div>
+            <div class="p-4 pt-0" data-id="9oni7uok" data-line="298-306">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="8a7esrj8" data-line="299-299">Tempered Glass</h3>
+              <div class="flex justify-between items-center" data-id="72vz50s4" data-line="300-305">
+                <span class="font-bold text-gray-900" data-id="we6r1aqf" data-line="301-301">$19.99</span>
+                <button class="text-primary hover:text-primaryLight" aria-label="Add to cart" data-id="04ww5cy1" data-line="302-304">
+                  <i class="fas fa-plus-circle" data-id="7otfztog" data-line="303-303"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Product 4 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow" data-id="hzdnclnm" data-line="310-323">
+            <div class="p-4" data-id="reaweyyt" data-line="311-313">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop sleeve" class="w-full h-40 object-contain" data-id="6jf2mt4n" data-line="312-312">
+            </div>
+            <div class="p-4 pt-0" data-id="z8obvkyu" data-line="314-322">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="2j7pa941" data-line="315-315">Laptop Sleeve</h3>
+              <div class="flex justify-between items-center" data-id="vnw7todg" data-line="316-321">
+                <span class="font-bold text-gray-900" data-id="szsksgry" data-line="317-317">$29.99</span>
+                <button class="text-primary hover:text-primaryLight" aria-label="Add to cart" data-id="ef9lvuhv" data-line="318-320">
+                  <i class="fas fa-plus-circle" data-id="egf69xxd" data-line="319-319"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script data-id="hgmb62ff" data-line="328-349">
+      // Quantity controls
+      document.querySelectorAll('.quantity-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const input = this.parentNode.querySelector('input[type="number"]');
+          if (this.querySelector('.fa-minus')) {
+            if (input.value > 1) input.value = parseInt(input.value) - 1;
+          } else {
+            if (input.value < 10) input.value = parseInt(input.value) + 1;
+          }
+        });
+      });
+  
+      // Remove item functionality
+      document.querySelectorAll('button[aria-label="Remove item"]').forEach(btn => {
+        btn.addEventListener('click', function() {
+          if (confirm('Are you sure you want to remove this item from your cart?')) {
+            this.closest('.cart-item-desktop, .cart-item-mobile').remove();
+          }
+        });
+      });
+    </script>
+  
+  </body></html>

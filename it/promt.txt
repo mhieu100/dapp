@@ -1,0 +1,143 @@
+Please design a user interface for an e-commerce website using UIBrainX with the following pages and features, incorporating the specified design guidelines:
+
+Design Guidelines
+
+
+
+
+
+Use a modern, responsive design with a consistent color scheme (e.g., blue and white).
+
+
+
+Ensure mobile-friendly layouts with collapsible menus.
+
+
+
+Include a navigation bar with links to all major sections.
+
+
+
+Use icons for actions (e.g., cart, wishlist, edit).
+
+
+
+Provide tooltips and validation messages for forms.
+
+
+
+Optimize for fast loading and accessibility (e.g., alt text for images, keyboard navigation).
+
+Buyer Section
+
+
+
+
+
+Login: A clean login page with email/password fields, "Remember Me" checkbox, and a "Forgot Password" link. Apply design guidelines with a centered layout, clear labels, and a prominent "Login" button. Ensure accessibility with high-contrast text.
+
+
+
+Registration: A registration form with fields for name, email, password, and confirm password, plus a "Sign Up" button. Use a multi-column layout on desktop, collapsible on mobile, with validation messages and tooltips for each field.
+
+
+
+Search Products: A search bar at the top with a product grid layout below, including filters for categories and price range. Include a collapsible filter panel on mobile, with icons for filter and search actions, and optimize images for fast loading.
+
+
+
+Product Listing and Search Results: A responsive grid of product cards with images, titles, prices, and "Add to Cart" buttons. Use a 3-column grid on desktop, 1-column on mobile, with alt text for images and hover effects on cards.
+
+
+
+Product Details with Available Variations: A detailed product page with images, description, size/color options, price, and "Add to Cart" button. Include a carousel for images, dropdowns for variations, and a sticky "Add to Cart" button, with accessibility for screen readers.
+
+
+
+Add to Cart: A cart summary page showing selected items, quantities, and a "Proceed to Checkout" button. Use a table layout with editable quantities, collapsible sections on mobile, and a prominent call-to-action button.
+
+
+
+Add to Wishlist: A wishlist page displaying saved items with options to remove or move to cart. Implement a grid layout with remove icons and a "Move to Cart" button, optimized for mobile scrolling.
+
+
+
+Checkout and Online Payment of the Orders: A checkout page with shipping address form, payment method selection (credit card, PayPal), and "Place Order" button. Use a step-by-step progress bar, collapsible address fields on mobile, and secure payment icons.
+
+
+
+Share Products on Social Media: Add social media sharing buttons (Facebook, Twitter, etc.) on product pages. Place buttons in a horizontal row with tooltips, using official social media icons, and ensure they are clickable on mobile.
+
+
+
+Ratings and Review on Products: A section on product pages for star ratings and text reviews with a submit button. Use a 5-star rating system with hover effects, a textarea for reviews, and validation for empty submissions.
+
+
+
+Place the Order: A confirmation page after checkout with order summary and tracking link. Include a thank-you message, order details table, and a prominent tracking link with an icon, optimized for printing.
+
+
+
+Manage Address Book: A page to add/edit/delete shipping addresses. Use a list view with edit/delete icons, a form for adding new addresses, and collapsible sections on mobile.
+
+
+
+My Account: A dashboard with tabs for orders, profile, and address book. Implement a tabbed interface with a sidebar navigation on desktop, collapsible on mobile, and clear section labels.
+
+
+
+Order History: A list of past orders with details and status. Use a table or card layout with sortable columns, status badges, and clickable order details, optimized for mobile scrolling.
+
+
+
+Order Tracking: A page showing order status with a progress bar. Include a horizontal progress bar with milestones, order details below, and an update timestamp, ensuring accessibility for colorblind users.
+
+Admin Section
+
+
+
+
+
+Ability to Create/Edit/Delete Products: A product management page with forms for adding/editing products and a delete option. Use a form with input fields, a preview image upload, and delete confirmation dialog, with collapsible sections on mobile.
+
+
+
+Manage Product Categories and Sub-Categories: A tree view or table to add/edit/delete categories. Implement a draggable tree view on desktop, collapsible on mobile, with add/edit icons and validation.
+
+
+
+Manage Product Catalog: A grid view of all products with bulk edit options. Use a 4-column grid with checkboxes for bulk actions, edit/delete icons, and a search bar, optimized for fast loading.
+
+
+
+Manage Orders: A table listing orders with filters for status and actions to update. Include sortable columns, dropdown filters, and action buttons (e.g., ship, cancel), with a responsive table on mobile.
+
+
+
+Manage Customers: A customer list with details and edit options. Use a table with clickable rows for details, edit icons, and a search filter, ensuring accessibility with high-contrast text.
+
+
+
+Manage Shipping: A settings page for shipping methods and rates. Implement a form with input fields for rates, a list of methods, and save buttons, collapsible on mobile.
+
+
+
+Manage Payments: A page to configure payment gateways. Use a tabbed interface for each gateway (e.g., PayPal, Stripe), with input fields and test mode toggles, optimized for accessibility.
+
+
+
+Manage Roles/Permissions: A role-based access control interface to assign permissions. Include a dropdown for roles, a checklist for permissions, and a save button, with tooltips for each permission.
+
+
+
+CMS Pages Management: A WYSIWYG editor for creating/editing static pages. Use a rich text editor with image upload, preview pane, and save/publish buttons, collapsible on mobile.
+
+
+
+Ratings and Reviews Management: A moderation panel to approve/reject reviews. Implement a table with review text, approve/reject buttons, and filters, optimized for mobile scrolling.
+
+
+
+Statistics and Reports Management: A dashboard with charts for sales, traffic, and customer data. Use a card layout for metrics, with interactive charts, and ensure fast loading with lazy-loaded data.
+
+Generate the UI designs for all pages with interactive prototypes where applicable.

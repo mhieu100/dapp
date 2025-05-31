@@ -1,0 +1,260 @@
+<!DOCTYPE html><html lang="en" data-id="3gtmc3rd" data-line="1-260"><head data-id="h2x7rzy6" data-line="1-65">
+    <meta charset="UTF-8" data-id="nn68qptr" data-line="2-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-id="19bzmuhe" data-line="3-3">
+    <script src="https://cdn.tailwindcss.com" data-id="ep0bf9gs" data-line="4-4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" data-id="7045dy96" data-line="5-5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" data-id="yobx22wq" data-line="6-6">
+    <script data-id="rs2af8xu" data-line="7-24">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1A73E8',
+              primaryLight: '#4285F4',
+              primaryLighter: '#5E97F6',
+              primaryLightest: '#8AB4F8',
+              primaryPale: '#C6DAFC',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style data-id="huykw5ki" data-line="25-64">
+      body {
+        background-color: #f8fafc;
+      }
+      .registration-container {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      }
+      .input-error {
+        border-color: #ef4444;
+      }
+      .error-message {
+        color: #ef4444;
+        font-size: 0.75rem;
+        margin-top: 0.25rem;
+      }
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      .tooltip .tooltip-text {
+        visibility: hidden;
+        width: 200px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex items-center justify-center p-4" data-id="3bj8v1mo" data-line="66-260">
+    <div class="registration-container bg-white rounded-xl max-w-4xl w-full p-8" data-id="6o8wtzdp" data-line="67-162">
+      <div class="text-center mb-8" data-id="eujy1baf" data-line="68-74">
+        <div class="w-16 h-16 mx-auto rounded-full bg-primaryLightest flex items-center justify-center text-primary" data-id="csfinalu" data-line="69-71">
+          <i class="fas fa-user-plus text-2xl" data-id="v78y9qyw" data-line="70-70"></i>
+        </div>
+        <h1 class="text-2xl font-bold text-gray-800 mt-4" data-id="4ulnqza2" data-line="72-72">Create your account</h1>
+        <p class="text-gray-500 mt-2" data-id="9cr6zqh8" data-line="73-73">Join our community today</p>
+      </div>
+  
+      <form id="registrationForm" class="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="fd80gzl4" data-line="76-161">
+        <!-- Name Field -->
+        <div class="mb-4" data-id="ts5bzi7z" data-line="78-88">
+          <div class="flex items-center" data-id="44rnsby4" data-line="79-85">
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1" data-id="nqgya8j6" data-line="80-80">Full Name</label>
+            <div class="tooltip ml-1" data-id="89eimuf7" data-line="81-84">
+              <i class="fas fa-info-circle text-primaryLight text-xs" data-id="5mwsqdzj" data-line="82-82"></i>
+              <span class="tooltip-text" data-id="7hqb5f52" data-line="83-83">Enter your full name as it appears on official documents</span>
+            </div>
+          </div>
+          <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryLight focus:border-primaryLight outline-none transition duration-200" placeholder="John Doe" required="" data-id="acynu4fj" data-line="86-86">
+          <div id="name-error" class="error-message hidden" data-id="icgceio2" data-line="87-87">Please enter a valid name</div>
+        </div>
+  
+        <!-- Email Field -->
+        <div class="mb-4" data-id="i2vjgnzl" data-line="91-101">
+          <div class="flex items-center" data-id="tcjt5jen" data-line="92-98">
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1" data-id="j4876568" data-line="93-93">Email</label>
+            <div class="tooltip ml-1" data-id="zmylh1nb" data-line="94-97">
+              <i class="fas fa-info-circle text-primaryLight text-xs" data-id="nj37dy1e" data-line="95-95"></i>
+              <span class="tooltip-text" data-id="s6pn5bxp" data-line="96-96">We'll send a confirmation link to this email</span>
+            </div>
+          </div>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryLight focus:border-primaryLight outline-none transition duration-200" placeholder="john@example.com" required="" data-id="04gneru8" data-line="99-99">
+          <div id="email-error" class="error-message hidden" data-id="l7qdudii" data-line="100-100">Please enter a valid email address</div>
+        </div>
+  
+        <!-- Password Field -->
+        <div class="mb-4" data-id="nrqlwo76" data-line="104-119">
+          <div class="flex items-center" data-id="2g3cek2s" data-line="105-111">
+            <label for="password" class="block text-sm font-medium text-gray-700 mb-1" data-id="9bi8tcl0" data-line="106-106">Password</label>
+            <div class="tooltip ml-1" data-id="w3m8jj2g" data-line="107-110">
+              <i class="fas fa-info-circle text-primaryLight text-xs" data-id="sm3blmgr" data-line="108-108"></i>
+              <span class="tooltip-text" data-id="j1ccptbm" data-line="109-109">Minimum 8 characters with at least 1 number and 1 special character</span>
+            </div>
+          </div>
+          <div class="relative" data-id="qrnl6w6i" data-line="112-117">
+            <input type="password" id="password" name="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryLight focus:border-primaryLight outline-none transition duration-200 pr-10" placeholder="••••••••" required="" data-id="6tzx6tow" data-line="113-113">
+            <button type="button" class="absolute right-3 top-2.5 text-gray-400 hover:text-primary" id="togglePassword" data-id="s9boi8zk" data-line="114-116">
+              <i class="far fa-eye" data-id="8w4t3qv9" data-line="115-115"></i>
+            </button>
+          </div>
+          <div id="password-error" class="error-message hidden" data-id="w7z46m9e" data-line="118-118">Password must be at least 8 characters with 1 number and 1 special character</div>
+        </div>
+  
+        <!-- Confirm Password Field -->
+        <div class="mb-6" data-id="ip4klpic" data-line="122-137">
+          <div class="flex items-center" data-id="i15p2i3w" data-line="123-129">
+            <label for="confirmPassword" class="block text-sm font-medium text-gray-700 mb-1" data-id="d052kb2o" data-line="124-124">Confirm Password</label>
+            <div class="tooltip ml-1" data-id="jtzobofy" data-line="125-128">
+              <i class="fas fa-info-circle text-primaryLight text-xs" data-id="s4a5wdnc" data-line="126-126"></i>
+              <span class="tooltip-text" data-id="ywbsqzj5" data-line="127-127">Re-enter your password to confirm</span>
+            </div>
+          </div>
+          <div class="relative" data-id="rffcy3fo" data-line="130-135">
+            <input type="password" id="confirmPassword" name="confirmPassword" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primaryLight focus:border-primaryLight outline-none transition duration-200 pr-10" placeholder="••••••••" required="" data-id="zowlc63u" data-line="131-131">
+            <button type="button" class="absolute right-3 top-2.5 text-gray-400 hover:text-primary" id="toggleConfirmPassword" data-id="ggpr8xrr" data-line="132-134">
+              <i class="far fa-eye" data-id="z2hni8w5" data-line="133-133"></i>
+            </button>
+          </div>
+          <div id="confirm-password-error" class="error-message hidden" data-id="ebf1l0ar" data-line="136-136">Passwords don't match</div>
+        </div>
+  
+        <!-- Terms and Conditions -->
+        <div class="md:col-span-2 mb-6" data-id="fmpa3w3t" data-line="140-148">
+          <div class="flex items-start" data-id="vw0q2p71" data-line="141-146">
+            <input id="terms" type="checkbox" class="h-4 w-4 text-primary focus:ring-primaryLight border-gray-300 rounded mt-1" required="" data-id="cexlnu4t" data-line="142-142">
+            <label for="terms" class="ml-2 block text-sm text-gray-700" data-id="2v3w1w4c" data-line="143-145">
+              I agree to the <a href="#" class="text-primary hover:text-primaryLight font-medium" data-id="tkzq1wxn" data-line="144-144">Terms of Service</a> and <a href="#" class="text-primary hover:text-primaryLight font-medium" data-id="xf0epk2x" data-line="144-144">Privacy Policy</a>
+            </label>
+          </div>
+          <div id="terms-error" class="error-message hidden" data-id="rap8fujv" data-line="147-147">You must accept the terms and conditions</div>
+        </div>
+  
+        <!-- Submit Button -->
+        <div class="md:col-span-2" data-id="l61k8tr9" data-line="151-155">
+          <button type="submit" class="w-full bg-primary hover:bg-primaryLight text-white font-medium py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryLight focus:ring-opacity-50 transition duration-200" data-id="vb2fz3r3" data-line="152-154">
+            Sign Up
+          </button>
+        </div>
+  
+        <!-- Login Link -->
+        <div class="md:col-span-2 mt-4 text-center text-sm text-gray-500" data-id="2v0e1ns6" data-line="158-160">
+          Already have an account? <a href="#" class="text-primary hover:text-primaryLight font-medium" data-id="8rp8gkf6" data-line="159-159">Log in</a>
+        </div>
+      </form>
+    </div>
+  
+    <script data-id="5rn1ike2" data-line="164-258">
+      // Password visibility toggle
+      const togglePassword = document.getElementById('togglePassword');
+      const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+      const password = document.getElementById('password');
+      const confirmPassword = document.getElementById('confirmPassword');
+      
+      togglePassword.addEventListener('click', function() {
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+        this.querySelector('i').classList.toggle('fa-eye');
+        this.querySelector('i').classList.toggle('fa-eye-slash');
+      });
+      
+      toggleConfirmPassword.addEventListener('click', function() {
+        const type = confirmPassword.getAttribute('type') === 'password' ? 'text' : 'password';
+        confirmPassword.setAttribute('type', type);
+        this.querySelector('i').classList.toggle('fa-eye');
+        this.querySelector('i').classList.toggle('fa-eye-slash');
+      });
+  
+      // Form validation
+      const form = document.getElementById('registrationForm');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        let isValid = true;
+        
+        // Validate name
+        const name = document.getElementById('name');
+        const nameError = document.getElementById('name-error');
+        if (name.value.trim() === '' || name.value.length < 2) {
+          name.classList.add('input-error');
+          nameError.classList.remove('hidden');
+          isValid = false;
+        } else {
+          name.classList.remove('input-error');
+          nameError.classList.add('hidden');
+        }
+        
+        // Validate email
+        const email = document.getElementById('email');
+        const emailError = document.getElementById('email-error');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value)) {
+          email.classList.add('input-error');
+          emailError.classList.remove('hidden');
+          isValid = false;
+        } else {
+          email.classList.remove('input-error');
+          emailError.classList.add('hidden');
+        }
+        
+        // Validate password
+        const password = document.getElementById('password');
+        const passwordError = document.getElementById('password-error');
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+        if (!passwordRegex.test(password.value)) {
+          password.classList.add('input-error');
+          passwordError.classList.remove('hidden');
+          isValid = false;
+        } else {
+          password.classList.remove('input-error');
+          passwordError.classList.add('hidden');
+        }
+        
+        // Validate confirm password
+        const confirmPassword = document.getElementById('confirmPassword');
+        const confirmPasswordError = document.getElementById('confirm-password-error');
+        if (confirmPassword.value !== password.value) {
+          confirmPassword.classList.add('input-error');
+          confirmPasswordError.classList.remove('hidden');
+          isValid = false;
+        } else {
+          confirmPassword.classList.remove('input-error');
+          confirmPasswordError.classList.add('hidden');
+        }
+        
+        // Validate terms checkbox
+        const terms = document.getElementById('terms');
+        const termsError = document.getElementById('terms-error');
+        if (!terms.checked) {
+          termsError.classList.remove('hidden');
+          isValid = false;
+        } else {
+          termsError.classList.add('hidden');
+        }
+        
+        if (isValid) {
+          // Form is valid, proceed with submission
+          alert('Registration successful!');
+          form.reset();
+        }
+      });
+    </script>
+  
+  </body></html>

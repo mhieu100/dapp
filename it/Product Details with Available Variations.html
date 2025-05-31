@@ -1,0 +1,403 @@
+<!DOCTYPE html><html lang="en" data-id="qp4c7qiq" data-line="1-403"><head data-id="d4pjf6a5" data-line="1-43">
+    <meta charset="UTF-8" data-id="hjazx3ad" data-line="2-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-id="j56cirka" data-line="3-3">
+    <script src="https://cdn.tailwindcss.com" data-id="j0l9dj36" data-line="4-4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" data-id="rzfqr9o9" data-line="5-5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" data-id="i4nptqx1" data-line="6-6">
+    <script data-id="544wro2v" data-line="7-24">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1A73E8',
+              primaryLight: '#4285F4',
+              primaryLighter: '#5E97F6',
+              primaryLightest: '#8AB4F8',
+              primaryPale: '#C6DAFC',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style data-id="h1xcytsu" data-line="25-42">
+      .image-carousel {
+        scroll-snap-type: x mandatory;
+      }
+      .image-carousel img {
+        scroll-snap-align: start;
+      }
+      .sticky-cart {
+        position: sticky;
+        bottom: 0;
+        z-index: 10;
+      }
+      @media (min-width: 768px) {
+        .sticky-cart {
+          position: static;
+        }
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50" data-id="cp07820p" data-line="44-403">
+    <div class="container mx-auto px-4 py-8" data-id="64dj4woz" data-line="45-326">
+      <!-- Breadcrumbs -->
+      <nav class="mb-6 text-sm text-gray-600" aria-label="Breadcrumb" data-id="58y49876" data-line="47-65">
+        <ol class="flex items-center space-x-2" data-id="n9eqed6y" data-line="48-64">
+          <li data-id="3cg1dl0j" data-line="49-51">
+            <a href="#" class="hover:text-primary" data-id="dmlo39zp" data-line="50-50">Home</a>
+          </li>
+          <li data-id="tf8q1yfr" data-line="52-54">
+            <i class="fas fa-chevron-right text-xs" data-id="yjq0frrr" data-line="53-53"></i>
+          </li>
+          <li data-id="rnez03p2" data-line="55-57">
+            <a href="#" class="hover:text-primary" data-id="5b5nmwbq" data-line="56-56">Electronics</a>
+          </li>
+          <li data-id="1cj4bkej" data-line="58-60">
+            <i class="fas fa-chevron-right text-xs" data-id="pmwdcjg5" data-line="59-59"></i>
+          </li>
+          <li aria-current="page" data-id="kbbpu437" data-line="61-63">
+            <span class="text-gray-900 font-medium" data-id="4vz5mtgb" data-line="62-62">Smartphone X Pro</span>
+          </li>
+        </ol>
+      </nav>
+  
+      <div class="flex flex-col lg:flex-row gap-8" data-id="brxv286x" data-line="67-192">
+        <!-- Image Gallery -->
+        <div class="lg:w-1/2" data-id="05wcb58q" data-line="69-101">
+          <!-- Main Image Carousel -->
+          <div class="relative mb-4 rounded-lg overflow-hidden bg-white border border-gray-200" data-id="omtzwo8e" data-line="71-84">
+            <div class="image-carousel flex overflow-x-auto snap-x snap-mandatory w-full h-96 no-scrollbar" style="scrollbar-width: none;" data-id="gn1xmf78" data-line="72-77">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Smartphone front" class="flex-none w-full h-full object-contain" id="main-image" data-id="skv2xl9j" data-line="73-73">
+              <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd" alt="Smartphone back" class="flex-none w-full h-full object-contain" data-id="t9eco22x" data-line="74-74">
+              <img src="https://images.unsplash.com/photo-1580913428735-bd3c269d6a82" alt="Smartphone side" class="flex-none w-full h-full object-contain" data-id="06ce3e18" data-line="75-75">
+              <img src="https://images.unsplash.com/photo-1600477412224-0f29b829f857?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHwxfHxTbWFydHBob25lJTIwYm94fGVufDB8fHx8MTc0NzkzNDkwNHww&amp;ixlib=rb-4.1.0&amp;q=85" alt="Smartphone box" class="flex-none w-full h-full object-contain" loading="lazy" data-id="5jf3w134" data-line="76-76">
+            </div>
+            <button class="absolute left-4 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 text-gray-800 flex items-center justify-center shadow-md hover:bg-white" aria-label="Previous image" data-id="z8t1tn6k" data-line="78-80">
+              <i class="fas fa-chevron-left" data-id="pz7tignt" data-line="79-79"></i>
+            </button>
+            <button class="absolute right-4 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-white/80 text-gray-800 flex items-center justify-center shadow-md hover:bg-white" aria-label="Next image" data-id="g4ym1nn1" data-line="81-83">
+              <i class="fas fa-chevron-right" data-id="c7yc7r6p" data-line="82-82"></i>
+            </button>
+          </div>
+  
+          <!-- Thumbnail Navigation -->
+          <div class="grid grid-cols-4 gap-2" data-id="iylk3nf9" data-line="87-100">
+            <button class="border rounded-md overflow-hidden hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none" data-id="ce62heqp" data-line="88-90">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Smartphone thumbnail" class="w-full h-20 object-cover" data-id="6kkrzz31" data-line="89-89">
+            </button>
+            <button class="border rounded-md overflow-hidden hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none" data-id="zf0z94yc" data-line="91-93">
+              <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd" alt="Smartphone back thumbnail" class="w-full h-20 object-cover" data-id="hezjmdrm" data-line="92-92">
+            </button>
+            <button class="border rounded-md overflow-hidden hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none" data-id="m9fg3fje" data-line="94-96">
+              <img src="https://images.unsplash.com/photo-1580913428735-bd3c269d6a82" alt="Smartphone side thumbnail" class="w-full h-20 object-cover" data-id="bhkegnzl" data-line="95-95">
+            </button>
+            <button class="border rounded-md overflow-hidden hover:border-primary focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none" data-id="1v9do2q8" data-line="97-99">
+              <img src="https://images.unsplash.com/photo-1612198273689-b437f53152ca?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHw0fHxTbWFydHBob25lJTIwYm94JTIwdGh1bWJuYWlsfGVufDB8fHx8MTc0NzkzNDkwNHww&amp;ixlib=rb-4.1.0&amp;q=85" alt="Smartphone box thumbnail" class="w-full h-20 object-cover" loading="lazy" data-id="6j0ufhaj" data-line="98-98">
+            </button>
+          </div>
+        </div>
+  
+        <!-- Product Info -->
+        <div class="lg:w-1/2" data-id="kvhpf4k3" data-line="104-191">
+          <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2" data-id="rrotz2xq" data-line="105-105">Smartphone X Pro</h1>
+          
+          <div class="flex items-center mb-4" data-id="zb1yo3j8" data-line="107-120">
+            <div class="flex text-yellow-400 mr-2" data-id="mp00r9bt" data-line="108-114">
+              <i class="fas fa-star" data-id="9ur9kx5e" data-line="109-109"></i>
+              <i class="fas fa-star" data-id="9tfu5rol" data-line="110-110"></i>
+              <i class="fas fa-star" data-id="rqedcdns" data-line="111-111"></i>
+              <i class="fas fa-star" data-id="twf2ap7v" data-line="112-112"></i>
+              <i class="fas fa-star-half-alt" data-id="ibcwbg7l" data-line="113-113"></i>
+            </div>
+            <span class="text-sm text-gray-600" data-id="l0iw6q8o" data-line="115-115">4.5 (128 reviews)</span>
+            <span class="mx-2 text-gray-400" data-id="2ijtrkil" data-line="116-116">|</span>
+            <span class="text-sm text-gray-600" data-id="5z6mod3p" data-line="117-117">In stock</span>
+            <span class="mx-2 text-gray-400" data-id="9bx7x7nj" data-line="118-118">|</span>
+            <span class="text-sm text-primary" data-id="69xxx51u" data-line="119-119">SKU: SMXPRO128</span>
+          </div>
+  
+          <div class="mb-6" data-id="k2taqdkl" data-line="122-126">
+            <span class="text-2xl font-bold text-gray-900" data-id="mbiu6hqt" data-line="123-123">$799.00</span>
+            <span class="ml-2 text-lg text-gray-500 line-through" data-id="aa7yfkdc" data-line="124-124">$899.00</span>
+            <span class="ml-2 text-sm bg-red-100 text-red-700 px-2 py-0.5 rounded" data-id="p99ve1jy" data-line="125-125">11% OFF</span>
+          </div>
+  
+          <div class="mb-6" data-id="fdewuykk" data-line="128-137">
+            <p class="text-gray-700 mb-4" data-id="roq0cw0d" data-line="129-129">The Smartphone X Pro features a 6.7" Super Retina XDR display, A15 Bionic chip, and triple-camera system with Night mode. With 5G speed and all-day battery life, it's our most powerful smartphone yet.</p>
+            <ul class="list-disc pl-5 text-gray-700 space-y-1" data-id="s50jmnkl" data-line="130-136">
+              <li data-id="fr6w6e2n" data-line="131-131">6.7-inch Super Retina XDR display</li>
+              <li data-id="2irp0gog" data-line="132-132">Pro camera system with Night mode</li>
+              <li data-id="tgxtccht" data-line="133-133">A15 Bionic chip with next-gen Neural Engine</li>
+              <li data-id="ygtusp4h" data-line="134-134">5G for superfast downloads and high-quality streaming</li>
+              <li data-id="tusx9bf4" data-line="135-135">All-day battery life</li>
+            </ul>
+          </div>
+  
+          <!-- Color Variations -->
+          <div class="mb-6" data-id="zuuwnli7" data-line="140-148">
+            <label class="block text-sm font-medium text-gray-700 mb-2" data-id="wttrlnsj" data-line="141-141">Color</label>
+            <div class="flex space-x-3" data-id="a00s47ha" data-line="142-147">
+              <button class="w-10 h-10 rounded-full border-2 border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none" style="background-color: #000000;" aria-label="Black color option" data-id="afpgcyob" data-line="143-143"></button>
+              <button class="w-10 h-10 rounded-full border-2 border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none" style="background-color: #F5F5F7;" aria-label="Silver color option" data-id="0roho183" data-line="144-144"></button>
+              <button class="w-10 h-10 rounded-full border-2 border-primary focus:ring-2 focus:ring-primary focus:outline-none" style="background-color: #E6C9C9;" aria-label="Gold color option" data-id="5ly02ieg" data-line="145-145"></button>
+              <button class="w-10 h-10 rounded-full border-2 border-gray-300 focus:ring-2 focus:ring-primary focus:outline-none" style="background-color: #153E6D;" aria-label="Blue color option" data-id="i5jy1nzd" data-line="146-146"></button>
+            </div>
+          </div>
+  
+          <!-- Storage Options -->
+          <div class="mb-6" data-id="7fnmr6qw" data-line="151-164">
+            <label for="storage" class="block text-sm font-medium text-gray-700 mb-2" data-id="zp7o36yq" data-line="152-152">Storage</label>
+            <div class="grid grid-cols-3 gap-3" data-id="qsawfx0m" data-line="153-163">
+              <button class="px-4 py-2 border rounded-md text-center hover:border-primary hover:bg-primaryPale focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none" data-id="d71xtnae" data-line="154-156">
+                128GB
+              </button>
+              <button class="px-4 py-2 border rounded-md text-center hover:border-primary hover:bg-primaryPale focus:border-primary focus:ring-2 focus:ring-primary focus:outline-none" data-id="ino9vw2u" data-line="157-159">
+                256GB
+              </button>
+              <button class="px-4 py-2 border border-primary bg-primaryPale text-primary rounded-md text-center focus:ring-2 focus:ring-primary focus:outline-none" data-id="ll7ab58b" data-line="160-162">
+                512GB
+              </button>
+            </div>
+          </div>
+  
+          <!-- Quantity -->
+          <div class="mb-6" data-id="n73dfb9y" data-line="167-178">
+            <label for="quantity" class="block text-sm font-medium text-gray-700 mb-2" data-id="qj4wng3d" data-line="168-168">Quantity</label>
+            <div class="flex items-center" data-id="494m8j1t" data-line="169-177">
+              <button class="w-10 h-10 border border-gray-300 rounded-l-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Decrease quantity" data-id="tm7de0l7" data-line="170-172">
+                <i class="fas fa-minus" data-id="f91uotwp" data-line="171-171"></i>
+              </button>
+              <input type="number" id="quantity" value="1" min="1" max="10" class="w-16 h-10 border-t border-b border-gray-300 text-center" aria-label="Quantity" data-id="twgqzdtr" data-line="173-173">
+              <button class="w-10 h-10 border border-gray-300 rounded-r-md bg-gray-100 text-gray-600 hover:bg-gray-200" aria-label="Increase quantity" data-id="p0da3o11" data-line="174-176">
+                <i class="fas fa-plus" data-id="14gq841i" data-line="175-175"></i>
+              </button>
+            </div>
+          </div>
+  
+          <!-- Desktop Add to Cart -->
+          <div class="hidden lg:block space-y-3" data-id="887vau3y" data-line="181-190">
+            <button class="w-full bg-primary hover:bg-primaryLight text-white py-3 px-6 rounded-lg font-medium flex items-center justify-center space-x-2" data-id="bfwkks9l" data-line="182-185">
+              <i class="fas fa-shopping-cart" data-id="10fojl3e" data-line="183-183"></i>
+              <span data-id="37t84w3p" data-line="184-184">Add to Cart</span>
+            </button>
+            <button class="w-full border border-primary text-primary hover:bg-primaryPale py-3 px-6 rounded-lg font-medium flex items-center justify-center space-x-2" data-id="n3uz3g5c" data-line="186-189">
+              <i class="far fa-heart" data-id="afgy8awn" data-line="187-187"></i>
+              <span data-id="lvawwylx" data-line="188-188">Add to Wishlist</span>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Mobile Sticky Add to Cart -->
+      <div class="sticky-cart lg:hidden bg-white border-t border-gray-200 py-3 px-4 shadow-md" data-id="3t9ce7ch" data-line="195-206">
+        <div class="flex items-center justify-between" data-id="u5wq6651" data-line="196-205">
+          <div data-id="r6obkg05" data-line="197-200">
+            <div class="text-sm text-gray-500" data-id="0rhu7eii" data-line="198-198">Total</div>
+            <div class="font-bold text-lg text-gray-900" data-id="kb2wb1uz" data-line="199-199">$799.00</div>
+          </div>
+          <button class="bg-primary hover:bg-primaryLight text-white py-2 px-6 rounded-lg font-medium flex items-center space-x-2" data-id="dyyidq9u" data-line="201-204">
+            <i class="fas fa-shopping-cart" data-id="d4hwzze4" data-line="202-202"></i>
+            <span data-id="lorglaig" data-line="203-203">Add to Cart</span>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Product Details Tabs -->
+      <div class="mt-12" data-id="mopkw00k" data-line="209-227">
+        <div class="border-b border-gray-200" data-id="opobzb5d" data-line="210-217">
+          <nav class="-mb-px flex space-x-8" data-id="zuqp3n5x" data-line="211-216">
+            <button class="border-b-2 border-primary text-primary font-medium py-4 px-1" data-id="9r0rb9w2" data-line="212-212">Details</button>
+            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium py-4 px-1" data-id="ebt0xx9f" data-line="213-213">Specifications</button>
+            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium py-4 px-1" data-id="3x3rawbz" data-line="214-214">Reviews</button>
+            <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 font-medium py-4 px-1" data-id="x2au7ol6" data-line="215-215">Shipping</button>
+          </nav>
+        </div>
+  
+        <div class="py-6" data-id="w7bznaks" data-line="219-226">
+          <h3 class="text-lg font-medium text-gray-900 mb-3" data-id="6g0ldfha" data-line="220-220">Product Details</h3>
+          <div class="prose max-w-none text-gray-700" data-id="prrvnjg9" data-line="221-225">
+            <p data-id="9ca34ba0" data-line="222-222">The Smartphone X Pro delivers our most advanced features in a stunning new design. The 6.7-inch Super Retina XDR display with ProMotion is our best iPhone display ever, offering an immersive viewing experience with incredible color accuracy and brightness.</p>
+            <p class="mt-3" data-id="v6kabbsv" data-line="223-223">The Pro camera system takes mobile photography to new heights with its advanced triple-camera setup featuring a 12MP Ultra Wide, Wide, and Telephoto camera. Night mode now works on all cameras, and the new LiDAR Scanner enables Night mode portraits.</p>
+            <p class="mt-3" data-id="gz8v21hn" data-line="224-224">Powered by the A15 Bionic chip with next-generation Neural Engine, the Smartphone X Pro delivers incredible performance and efficiency for everything you do. 5G enables superfast downloads and high-quality streaming, while Ceramic Shield provides improved drop performance.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Related Products -->
+      <div class="mt-16" data-id="vbwjsaz2" data-line="230-325">
+        <h2 class="text-xl font-bold text-gray-900 mb-6" data-id="wk6so8gl" data-line="231-231">You may also like</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" data-id="d9yu50v1" data-line="232-324">
+          <!-- Related Product 1 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="wg6efl5m" data-line="234-254">
+            <div class="p-4" data-id="t1e365o6" data-line="235-237">
+              <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="Wireless earbuds" class="w-full h-40 object-contain" data-id="bt8c2ht8" data-line="236-236">
+            </div>
+            <div class="p-4 pt-0" data-id="31bmi8qm" data-line="238-253">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="4966yqd7" data-line="239-239">Wireless Earbuds</h3>
+              <div class="flex items-center mb-2" data-id="znxy628j" data-line="240-249">
+                <div class="flex text-yellow-400" data-id="38fk6m84" data-line="241-247">
+                  <i class="fas fa-star" data-id="ls60bsqx" data-line="242-242"></i>
+                  <i class="fas fa-star" data-id="kp6e9s53" data-line="243-243"></i>
+                  <i class="fas fa-star" data-id="aph7ioe5" data-line="244-244"></i>
+                  <i class="fas fa-star" data-id="8unb5hqr" data-line="245-245"></i>
+                  <i class="far fa-star" data-id="o15e6l4z" data-line="246-246"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1" data-id="05676euw" data-line="248-248">(87)</span>
+              </div>
+              <div class="flex justify-between items-center" data-id="ytpjhvou" data-line="250-252">
+                <span class="font-bold text-gray-900" data-id="kpbnc8mr" data-line="251-251">$129.99</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Related Product 2 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="x4u0idt9" data-line="257-277">
+            <div class="p-4" data-id="p1d2b0np" data-line="258-260">
+              <img src="https://images.unsplash.com/photo-1623393945964-8f5d573f9358?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w3MzY5OTh8MHwxfHNlYXJjaHw0fHxQaG9uZSUyMGNhc2V8ZW58MHx8fHwxNzQ3OTM0OTA0fDA&amp;ixlib=rb-4.1.0&amp;q=85" alt="Phone case" class="w-full h-40 object-contain" loading="lazy" data-id="ikiukmoh" data-line="259-259">
+            </div>
+            <div class="p-4 pt-0" data-id="wbbm0z2z" data-line="261-276">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="24tiz638" data-line="262-262">Protective Case</h3>
+              <div class="flex items-center mb-2" data-id="soqo0fzo" data-line="263-272">
+                <div class="flex text-yellow-400" data-id="m1u21fnz" data-line="264-270">
+                  <i class="fas fa-star" data-id="bccgaokr" data-line="265-265"></i>
+                  <i class="fas fa-star" data-id="4zvnislv" data-line="266-266"></i>
+                  <i class="fas fa-star" data-id="lg8oshfj" data-line="267-267"></i>
+                  <i class="fas fa-star-half-alt" data-id="0qrqa2ab" data-line="268-268"></i>
+                  <i class="far fa-star" data-id="1xtbynrl" data-line="269-269"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1" data-id="5yxl78iy" data-line="271-271">(42)</span>
+              </div>
+              <div class="flex justify-between items-center" data-id="ijf6puf1" data-line="273-275">
+                <span class="font-bold text-gray-900" data-id="w48wdonk" data-line="274-274">$39.99</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Related Product 3 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="qp58i5hh" data-line="280-300">
+            <div class="p-4" data-id="io23xugx" data-line="281-283">
+              <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50" alt="Wireless charger" class="w-full h-40 object-contain" data-id="pvvp21rf" data-line="282-282">
+            </div>
+            <div class="p-4 pt-0" data-id="lc555ela" data-line="284-299">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="oidx4003" data-line="285-285">Wireless Charger</h3>
+              <div class="flex items-center mb-2" data-id="b2a9oetf" data-line="286-295">
+                <div class="flex text-yellow-400" data-id="p2mbnef8" data-line="287-293">
+                  <i class="fas fa-star" data-id="f6jwmoh4" data-line="288-288"></i>
+                  <i class="fas fa-star" data-id="1i23dsox" data-line="289-289"></i>
+                  <i class="fas fa-star" data-id="t0j7yma3" data-line="290-290"></i>
+                  <i class="fas fa-star" data-id="yngk34xw" data-line="291-291"></i>
+                  <i class="fas fa-star-half-alt" data-id="z84llyrr" data-line="292-292"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1" data-id="mihdn1iz" data-line="294-294">(156)</span>
+              </div>
+              <div class="flex justify-between items-center" data-id="uukb8sij" data-line="296-298">
+                <span class="font-bold text-gray-900" data-id="7bs7ubmy" data-line="297-297">$59.99</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Related Product 4 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="nwyuyf05" data-line="303-323">
+            <div class="p-4" data-id="bok2p8ut" data-line="304-306">
+              <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553" alt="Screen protector" class="w-full h-40 object-contain" data-id="ziu9bl6r" data-line="305-305">
+            </div>
+            <div class="p-4 pt-0" data-id="n0vp09sr" data-line="307-322">
+              <h3 class="font-medium text-gray-800 mb-1" data-id="k79u1e9s" data-line="308-308">Tempered Glass</h3>
+              <div class="flex items-center mb-2" data-id="frrgzjse" data-line="309-318">
+                <div class="flex text-yellow-400" data-id="6quny2c7" data-line="310-316">
+                  <i class="fas fa-star" data-id="krblcag1" data-line="311-311"></i>
+                  <i class="fas fa-star" data-id="9sgym1ne" data-line="312-312"></i>
+                  <i class="fas fa-star" data-id="zy7umlot" data-line="313-313"></i>
+                  <i class="fas fa-star" data-id="k1ieali1" data-line="314-314"></i>
+                  <i class="far fa-star" data-id="5w5ol457" data-line="315-315"></i>
+                </div>
+                <span class="text-xs text-gray-500 ml-1" data-id="y3uzgrvv" data-line="317-317">(203)</span>
+              </div>
+              <div class="flex justify-between items-center" data-id="hfq2351s" data-line="319-321">
+                <span class="font-bold text-gray-900" data-id="qgxzzjvy" data-line="320-320">$19.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script data-id="kxqqtyrp" data-line="328-401">
+      // Image carousel functionality
+      const carousel = document.querySelector('.image-carousel');
+      const images = carousel.querySelectorAll('img');
+      const prevBtn = document.querySelector('button[aria-label="Previous image"]');
+      const nextBtn = document.querySelector('button[aria-label="Next image"]');
+      const thumbnails = document.querySelectorAll('.grid.grid-cols-4 button');
+      
+      let currentIndex = 0;
+      const imageWidth = images[0].clientWidth;
+      
+      function updateCarousel() {
+        carousel.scrollTo({
+          left: currentIndex * imageWidth,
+          behavior: 'smooth'
+        });
+        
+        // Update active thumbnail
+        thumbnails.forEach((thumb, index) => {
+          if (index === currentIndex) {
+            thumb.classList.add('border-primary', 'ring-2', 'ring-primary');
+          } else {
+            thumb.classList.remove('border-primary', 'ring-2', 'ring-primary');
+          }
+        });
+      }
+      
+      // Navigation buttons
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        updateCarousel();
+      });
+      
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        updateCarousel();
+      });
+      
+      // Thumbnail navigation
+      thumbnails.forEach((thumb, index) => {
+        thumb.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel();
+        });
+      });
+      
+      // Keyboard navigation for accessibility
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+          updateCarousel();
+        } else if (e.key === 'ArrowRight') {
+          currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+          updateCarousel();
+        }
+      });
+      
+      // Quantity controls
+      const quantityInput = document.getElementById('quantity');
+      const minusBtn = quantityInput.previousElementSibling;
+      const plusBtn = quantityInput.nextElementSibling;
+      
+      minusBtn.addEventListener('click', () => {
+        if (quantityInput.value > 1) {
+          quantityInput.value = parseInt(quantityInput.value) - 1;
+        }
+      });
+      
+      plusBtn.addEventListener('click', () => {
+        if (quantityInput.value < 10) {
+          quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+      });
+    </script>
+  
+  </body></html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="en" data-id="k5ovh3qw" data-line="1-217"><head data-id="tn1ybuuv" data-line="1-33">
+    <meta charset="UTF-8" data-id="v20245zq" data-line="2-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-id="3jt3u7xi" data-line="3-3">
+    <script src="https://cdn.tailwindcss.com" data-id="qewro5rr" data-line="4-4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" data-id="o2esgqnb" data-line="5-5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" data-id="wm1epwbr" data-line="6-6">
+    <script data-id="odm3lxrw" data-line="7-24">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1A73E8',
+              primaryLight: '#4285F4',
+              primaryLighter: '#5E97F6',
+              primaryLightest: '#8AB4F8',
+              primaryPale: '#C6DAFC',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style data-id="xybffxx5" data-line="25-32">
+      .wishlist-item {
+        transition: all 0.3s ease;
+      }
+      .wishlist-item:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50" data-id="sosg668b" data-line="34-217">
+    <div class="container mx-auto px-4 py-8" data-id="kcis306h" data-line="35-195">
+      <!-- Breadcrumbs -->
+      <nav class="mb-6 text-sm text-gray-600" aria-label="Breadcrumb" data-id="x5b7u97z" data-line="37-49">
+        <ol class="flex items-center space-x-2" data-id="9ulkdi9o" data-line="38-48">
+          <li data-id="8tq0qmlj" data-line="39-41">
+            <a href="#" class="hover:text-primary" data-id="mqhfrs55" data-line="40-40">Home</a>
+          </li>
+          <li data-id="skwf1egx" data-line="42-44">
+            <i class="fas fa-chevron-right text-xs" data-id="ozro6sgq" data-line="43-43"></i>
+          </li>
+          <li data-id="taroiouk" data-line="45-47">
+            <a href="#" class="hover:text-primary" data-id="w15b38po" data-line="46-46">Wishlist</a>
+          </li>
+        </ol>
+      </nav>
+  
+      <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6" data-id="5ceandb6" data-line="51-51">Your Wishlist</h1>
+  
+      <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden" data-id="ui0ctc9u" data-line="53-186">
+        <!-- Wishlist Items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6" data-id="6swvcvng" data-line="55-175">
+          <!-- Wishlist Item 1 -->
+          <div class="wishlist-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden relative" data-id="h01pk5rn" data-line="57-74">
+            <button class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-600" aria-label="Remove from wishlist" data-id="9ci4vvv8" data-line="58-60">
+              <i class="fas fa-times" data-id="v8vdmvkc" data-line="59-59"></i>
+            </button>
+            <div class="p-4" data-id="b7ec0v88" data-line="61-63">
+              <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Smartphone front" class="w-full h-40 object-contain" data-id="pgvvgru9" data-line="62-62">
+            </div>
+            <div class="p-4 pt-0" data-id="6bpo0sfi" data-line="64-73">
+              <h3 class="font-medium text-gray-800 mb-1 truncate" data-id="86tx39x0" data-line="65-65">Smartphone X Pro</h3>
+              <p class="text-sm text-gray-500 mb-2" data-id="dv47nx2a" data-line="66-66">Color: Black | Storage: 128GB</p>
+              <div class="flex justify-between items-center" data-id="p49c5xbi" data-line="67-72">
+                <span class="font-bold text-gray-900" data-id="kpm6jgy2" data-line="68-68">$799.00</span>
+                <button class="text-sm bg-primary hover:bg-primaryLight text-white py-2 px-4 rounded-lg font-medium" data-id="gsfszrhx" data-line="69-71">
+                  Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Wishlist Item 2 -->
+          <div class="wishlist-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden relative" data-id="vgb0kj5e" data-line="77-94">
+            <button class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-600" aria-label="Remove from wishlist" data-id="h70r7dqh" data-line="78-80">
+              <i class="fas fa-times" data-id="ndi99a7r" data-line="79-79"></i>
+            </button>
+            <div class="p-4" data-id="kjfkidxl" data-line="81-83">
+              <img src="https://images.unsplash.com/photo-1607936854279-55e8a4c64888" alt="Wireless earbuds" class="w-full h-40 object-contain" data-id="6ydarxys" data-line="82-82">
+            </div>
+            <div class="p-4 pt-0" data-id="ih498wif" data-line="84-93">
+              <h3 class="font-medium text-gray-800 mb-1 truncate" data-id="ur3i5o1o" data-line="85-85">Wireless Earbuds Pro</h3>
+              <p class="text-sm text-gray-500 mb-2" data-id="dywz67ge" data-line="86-86">Color: White | Noise Cancelling</p>
+              <div class="flex justify-between items-center" data-id="rmy48orh" data-line="87-92">
+                <span class="font-bold text-gray-900" data-id="spco5wot" data-line="88-88">$129.99</span>
+                <button class="text-sm bg-primary hover:bg-primaryLight text-white py-2 px-4 rounded-lg font-medium" data-id="3z91t6z3" data-line="89-91">
+                  Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Wishlist Item 3 -->
+          <div class="wishlist-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden relative" data-id="j4zcyfui" data-line="97-114">
+            <button class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-600" aria-label="Remove from wishlist" data-id="3ce2kicn" data-line="98-100">
+              <i class="fas fa-times" data-id="llmbh2er" data-line="99-99"></i>
+            </button>
+            <div class="p-4" data-id="uebr9xg9" data-line="101-103">
+              <img src="https://images.unsplash.com/photo-1547721064-da6cfb341d50" alt="Wireless charger" class="w-full h-40 object-contain" data-id="7b4pwyhn" data-line="102-102">
+            </div>
+            <div class="p-4 pt-0" data-id="2kevh7es" data-line="104-113">
+              <h3 class="font-medium text-gray-800 mb-1 truncate" data-id="f339b506" data-line="105-105">Fast Wireless Charger</h3>
+              <p class="text-sm text-gray-500 mb-2" data-id="tj84hb2r" data-line="106-106">15W Fast Charging</p>
+              <div class="flex justify-between items-center" data-id="agh9p8ik" data-line="107-112">
+                <span class="font-bold text-gray-900" data-id="kenyw0ar" data-line="108-108">$59.99</span>
+                <button class="text-sm bg-primary hover:bg-primaryLight text-white py-2 px-4 rounded-lg font-medium" data-id="ywcn2l1g" data-line="109-111">
+                  Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Wishlist Item 4 -->
+          <div class="wishlist-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden relative" data-id="y0pmprjg" data-line="117-134">
+            <button class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-600" aria-label="Remove from wishlist" data-id="lcnga6yy" data-line="118-120">
+              <i class="fas fa-times" data-id="shi859ya" data-line="119-119"></i>
+            </button>
+            <div class="p-4" data-id="uy2ysbu7" data-line="121-123">
+              <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop sleeve" class="w-full h-40 object-contain" data-id="7gfn07qg" data-line="122-122">
+            </div>
+            <div class="p-4 pt-0" data-id="lahlp3wz" data-line="124-133">
+              <h3 class="font-medium text-gray-800 mb-1 truncate" data-id="af5b58e3" data-line="125-125">Premium Laptop Sleeve</h3>
+              <p class="text-sm text-gray-500 mb-2" data-id="19q076s9" data-line="126-126">Color: Navy | 13-15"</p>
+              <div class="flex justify-between items-center" data-id="n92vrhna" data-line="127-132">
+                <span class="font-bold text-gray-900" data-id="8tauq1jz" data-line="128-128">$29.99</span>
+                <button class="text-sm bg-primary hover:bg-primaryLight text-white py-2 px-4 rounded-lg font-medium" data-id="ed93a47o" data-line="129-131">
+                  Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Wishlist Item 5 -->
+          <div class="wishlist-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden relative" data-id="uxxmdemi" data-line="137-154">
+            <button class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-600" aria-label="Remove from wishlist" data-id="tyqzxchd" data-line="138-140">
+              <i class="fas fa-times" data-id="mvj8bffc" data-line="139-139"></i>
+            </button>
+            <div class="p-4" data-id="2uf4zldh" data-line="141-143">
+              <img src="https://images.unsplash.com/photo-1520390138845-fd2d229dd553" alt="Screen protector" class="w-full h-40 object-contain" data-id="a7bpj0mx" data-line="142-142">
+            </div>
+            <div class="p-4 pt-0" data-id="j61a7lkw" data-line="144-153">
+              <h3 class="font-medium text-gray-800 mb-1 truncate" data-id="iy4hjap3" data-line="145-145">Tempered Glass Screen Protector</h3>
+              <p class="text-sm text-gray-500 mb-2" data-id="b76gsg0p" data-line="146-146">For Smartphone X Pro</p>
+              <div class="flex justify-between items-center" data-id="sszy7qg3" data-line="147-152">
+                <span class="font-bold text-gray-900" data-id="ngc6mfcv" data-line="148-148">$19.99</span>
+                <button class="text-sm bg-primary hover:bg-primaryLight text-white py-2 px-4 rounded-lg font-medium" data-id="7v6ytpqq" data-line="149-151">
+                  Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Wishlist Item 6 -->
+          <div class="wishlist-item bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden relative" data-id="r04kg5u9" data-line="157-174">
+            <button class="absolute top-2 right-2 bg-white rounded-full p-2 shadow-md text-gray-500 hover:text-red-600" aria-label="Remove from wishlist" data-id="egtm0iq3" data-line="158-160">
+              <i class="fas fa-times" data-id="wpie28tx" data-line="159-159"></i>
+            </button>
+            <div class="p-4" data-id="j69b6bc5" data-line="161-163">
+              <img src="https://images.unsplash.com/photo-1623393945964-8f5d573f9358" alt="Phone case" class="w-full h-40 object-contain" data-id="twjn5p4l" data-line="162-162">
+            </div>
+            <div class="p-4 pt-0" data-id="wp46yrej" data-line="164-173">
+              <h3 class="font-medium text-gray-800 mb-1 truncate" data-id="awacb0ln" data-line="165-165">Rugged Phone Case</h3>
+              <p class="text-sm text-gray-500 mb-2" data-id="opwu7uei" data-line="166-166">For Smartphone X Pro</p>
+              <div class="flex justify-between items-center" data-id="vze4mhcg" data-line="167-172">
+                <span class="font-bold text-gray-900" data-id="lycyus5d" data-line="168-168">$39.99</span>
+                <button class="text-sm bg-primary hover:bg-primaryLight text-white py-2 px-4 rounded-lg font-medium" data-id="ck40w7bk" data-line="169-171">
+                  Move to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Empty State -->
+        <div class="hidden p-12 text-center" data-id="cw06dfv9" data-line="178-185">
+          <i class="fas fa-heart text-4xl text-gray-300 mb-4" data-id="dqmdh9zk" data-line="179-179"></i>
+          <h3 class="text-xl font-medium text-gray-700 mb-2" data-id="qdgv5zj0" data-line="180-180">Your wishlist is empty</h3>
+          <p class="text-gray-500 mb-6" data-id="ot4ie110" data-line="181-181">Save your favorite items here for easy access</p>
+          <button class="bg-primary hover:bg-primaryLight text-white py-2 px-6 rounded-lg font-medium" data-id="ewznerzc" data-line="182-184">
+            Start Shopping
+          </button>
+        </div>
+      </div>
+  
+      <!-- Continue Shopping Button -->
+      <div class="mt-8 text-center" data-id="kz74k0xw" data-line="189-194">
+        <button class="border border-primary text-primary hover:bg-primaryPale py-3 px-8 rounded-lg font-medium inline-flex items-center" data-id="86ntvb2s" data-line="190-193">
+          <i class="fas fa-arrow-left mr-2" data-id="7cnf62ld" data-line="191-191"></i>
+          <span data-id="0f8cobij" data-line="192-192">Continue Shopping</span>
+        </button>
+      </div>
+    </div>
+  
+    <script data-id="pad40bec" data-line="197-215">
+      // Remove item functionality
+      document.querySelectorAll('button[aria-label="Remove from wishlist"]').forEach(btn => {
+        btn.addEventListener('click', function() {
+          if (confirm('Remove this item from your wishlist?')) {
+            this.closest('.wishlist-item').remove();
+          }
+        });
+      });
+  
+      // Move to cart functionality
+      document.querySelectorAll('button:contains("Move to Cart")').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const item = this.closest('.wishlist-item');
+          alert('Item moved to cart!');
+          item.remove();
+        });
+      });
+    </script>
+  
+  </body></html>

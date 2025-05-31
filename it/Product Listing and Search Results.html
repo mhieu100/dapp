@@ -1,0 +1,256 @@
+<!DOCTYPE html><html lang="en" data-id="nmewword" data-line="1-256"><head data-id="0geolzxk" data-line="1-34">
+    <meta charset="UTF-8" data-id="ux9s77jh" data-line="2-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-id="uuugcvxt" data-line="3-3">
+    <script src="https://cdn.tailwindcss.com" data-id="965rnm3j" data-line="4-4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" data-id="8g75dvsy" data-line="5-5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" data-id="bk46ooq3" data-line="6-6">
+    <script data-id="2hwkpshs" data-line="7-24">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1A73E8',
+              primaryLight: '#4285F4',
+              primaryLighter: '#5E97F6',
+              primaryLightest: '#8AB4F8',
+              primaryPale: '#C6DAFC',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style data-id="ekbkfz5w" data-line="25-33">
+      .product-card {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50" data-id="wsul078d" data-line="35-256">
+    <div class="container mx-auto px-4 py-8" data-id="j3q8oh7r" data-line="36-241">
+      <!-- Search and Filter Header -->
+      <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4" data-id="2mk446mf" data-line="38-57">
+        <div class="relative w-full md:w-96" data-id="9j3qw4yi" data-line="39-42">
+          <input type="text" placeholder="Search products..." class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary" data-id="ttg0zmgb" data-line="40-40">
+          <i class="fas fa-search absolute left-3 top-3 text-gray-400" data-id="02z071t3" data-line="41-41"></i>
+        </div>
+        
+        <div class="flex items-center gap-2 w-full md:w-auto" data-id="vhjaqpci" data-line="44-56">
+          <button class="px-4 py-2 bg-white rounded-lg border border-gray-300 text-primary flex items-center gap-2" data-id="cflyl8e7" data-line="45-48">
+            <i class="fas fa-filter" data-id="kohnuxgm" data-line="46-46"></i>
+            <span class="hidden sm:inline" data-id="jvx7jehk" data-line="47-47">Filters</span>
+          </button>
+          <select class="px-4 py-2 bg-white rounded-lg border border-gray-300 focus:outline-none focus:ring-1 focus:ring-primary" data-id="0xmn6btw" data-line="49-55">
+            <option data-id="cf75ujyh" data-line="50-50">Sort by</option>
+            <option data-id="0nuqql5p" data-line="51-51">Price: Low to High</option>
+            <option data-id="77zjbfxm" data-line="52-52">Price: High to Low</option>
+            <option data-id="8phx2111" data-line="53-53">Newest</option>
+            <option data-id="vyors23j" data-line="54-54">Best Rating</option>
+          </select>
+        </div>
+      </div>
+  
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-id="vuymldhn" data-line="60-219">
+        <!-- Product 1 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="mbaab5w8" data-line="62-88">
+          <div class="p-4" data-id="1qd3g2za" data-line="63-65">
+            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12" alt="Smartphone device" class="w-full h-48 object-contain" data-id="yxcvzz00" data-line="64-64">
+          </div>
+          <div class="p-4 pt-0" data-id="zf9gp7q9" data-line="66-87">
+            <h3 class="font-medium text-gray-800 mb-1" data-id="e24tazkx" data-line="67-67">Smartphone X Pro</h3>
+            <div class="flex items-center mb-2" data-id="s79bhued" data-line="68-77">
+              <div class="flex text-yellow-400" data-id="ujyrxv8n" data-line="69-75">
+                <i class="fas fa-star" data-id="trlcqa31" data-line="70-70"></i>
+                <i class="fas fa-star" data-id="abgdf2xb" data-line="71-71"></i>
+                <i class="fas fa-star" data-id="hrdusaao" data-line="72-72"></i>
+                <i class="fas fa-star" data-id="anymqucy" data-line="73-73"></i>
+                <i class="fas fa-star-half-alt" data-id="f5vee26m" data-line="74-74"></i>
+              </div>
+              <span class="text-xs text-gray-500 ml-1" data-id="8c4a43a0" data-line="76-76">(128)</span>
+            </div>
+            <div class="flex justify-between items-center" data-id="od75mhm7" data-line="78-86">
+              <div data-id="yyv279qc" data-line="79-82">
+                <span class="font-bold text-gray-900" data-id="6v5nk01t" data-line="80-80">$799</span>
+                <span class="text-sm text-gray-500 line-through ml-2" data-id="vcq73zt0" data-line="81-81">$899</span>
+              </div>
+              <button class="bg-primary hover:bg-primaryLight text-white px-3 py-1 rounded-lg text-sm font-medium" data-id="p73j04n6" data-line="83-85">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 2 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="lirz3rzq" data-line="91-114">
+          <div class="p-4" data-id="344o5eju" data-line="92-94">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Smart watch" class="w-full h-48 object-contain" data-id="pqrkq2fi" data-line="93-93">
+          </div>
+          <div class="p-4 pt-0" data-id="u7ajmccc" data-line="95-113">
+            <h3 class="font-medium text-gray-800 mb-1" data-id="k9pl87kf" data-line="96-96">Smart Watch 3</h3>
+            <div class="flex items-center mb-2" data-id="tcwc0jvn" data-line="97-106">
+              <div class="flex text-yellow-400" data-id="ijrtnkse" data-line="98-104">
+                <i class="fas fa-star" data-id="dyxa6d9t" data-line="99-99"></i>
+                <i class="fas fa-star" data-id="ooeko2x5" data-line="100-100"></i>
+                <i class="fas fa-star" data-id="wgfiynor" data-line="101-101"></i>
+                <i class="fas fa-star" data-id="1tsjfb6w" data-line="102-102"></i>
+                <i class="far fa-star" data-id="p0yxn8vg" data-line="103-103"></i>
+              </div>
+              <span class="text-xs text-gray-500 ml-1" data-id="onqh1ivu" data-line="105-105">(87)</span>
+            </div>
+            <div class="flex justify-between items-center" data-id="ln38q1ze" data-line="107-112">
+              <span class="font-bold text-gray-900" data-id="fk7xk478" data-line="108-108">$249</span>
+              <button class="bg-primary hover:bg-primaryLight text-white px-3 py-1 rounded-lg text-sm font-medium" data-id="55ut8ifp" data-line="109-111">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 3 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="ot720798" data-line="117-140">
+          <div class="p-4" data-id="g3bkzoq0" data-line="118-120">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Headphones product" class="w-full h-48 object-contain" data-id="pg3se1ev" data-line="119-119">
+          </div>
+          <div class="p-4 pt-0" data-id="qc3y6dnt" data-line="121-139">
+            <h3 class="font-medium text-gray-800 mb-1" data-id="vfxgxpmx" data-line="122-122">Noise Cancelling Headphones</h3>
+            <div class="flex items-center mb-2" data-id="wz3hq3fq" data-line="123-132">
+              <div class="flex text-yellow-400" data-id="ea7ywxo6" data-line="124-130">
+                <i class="fas fa-star" data-id="7l47kge1" data-line="125-125"></i>
+                <i class="fas fa-star" data-id="9iblsq5j" data-line="126-126"></i>
+                <i class="fas fa-star" data-id="z9fuab8i" data-line="127-127"></i>
+                <i class="fas fa-star" data-id="fq3puuhr" data-line="128-128"></i>
+                <i class="fas fa-star" data-id="m48fvv1c" data-line="129-129"></i>
+              </div>
+              <span class="text-xs text-gray-500 ml-1" data-id="2292xm3a" data-line="131-131">(215)</span>
+            </div>
+            <div class="flex justify-between items-center" data-id="tu8chosp" data-line="133-138">
+              <span class="font-bold text-gray-900" data-id="i7kijbsb" data-line="134-134">$179</span>
+              <button class="bg-primary hover:bg-primaryLight text-white px-3 py-1 rounded-lg text-sm font-medium" data-id="9qx8rmgu" data-line="135-137">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 4 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="tw3fklgn" data-line="143-166">
+          <div class="p-4" data-id="opo0p7x5" data-line="144-146">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Running shoes" class="w-full h-48 object-contain" data-id="kus26dki" data-line="145-145">
+          </div>
+          <div class="p-4 pt-0" data-id="zn73mtin" data-line="147-165">
+            <h3 class="font-medium text-gray-800 mb-1" data-id="8ouccvl3" data-line="148-148">Running Shoes Pro</h3>
+            <div class="flex items-center mb-2" data-id="ov6q09xj" data-line="149-158">
+              <div class="flex text-yellow-400" data-id="1co7uldv" data-line="150-156">
+                <i class="fas fa-star" data-id="p3l80eif" data-line="151-151"></i>
+                <i class="fas fa-star" data-id="w12rcqh3" data-line="152-152"></i>
+                <i class="fas fa-star" data-id="37udl5yy" data-line="153-153"></i>
+                <i class="fas fa-star" data-id="f7znbywl" data-line="154-154"></i>
+                <i class="fas fa-star-half-alt" data-id="r1bkh6iw" data-line="155-155"></i>
+              </div>
+              <span class="text-xs text-gray-500 ml-1" data-id="o844smiv" data-line="157-157">(156)</span>
+            </div>
+            <div class="flex justify-between items-center" data-id="sy001pir" data-line="159-164">
+              <span class="font-bold text-gray-900" data-id="z31x5rx8" data-line="160-160">$129</span>
+              <button class="bg-primary hover:bg-primaryLight text-white px-3 py-1 rounded-lg text-sm font-medium" data-id="9z3slqk6" data-line="161-163">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 5 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="h4mzwvtr" data-line="169-192">
+          <div class="p-4" data-id="739sjr77" data-line="170-172">
+            <img src="https://images.unsplash.com/photo-1560343090-f0409e92791a" alt="T-shirt product" class="w-full h-48 object-contain" data-id="k4hzz4rp" data-line="171-171">
+          </div>
+          <div class="p-4 pt-0" data-id="oxtakhsw" data-line="173-191">
+            <h3 class="font-medium text-gray-800 mb-1" data-id="3fnfdg7t" data-line="174-174">Premium Cotton T-Shirt</h3>
+            <div class="flex items-center mb-2" data-id="1i2gym32" data-line="175-184">
+              <div class="flex text-yellow-400" data-id="o4w184lu" data-line="176-182">
+                <i class="fas fa-star" data-id="agtv7fkw" data-line="177-177"></i>
+                <i class="fas fa-star" data-id="e0htc3wi" data-line="178-178"></i>
+                <i class="fas fa-star" data-id="3it5edpr" data-line="179-179"></i>
+                <i class="fas fa-star" data-id="70od04jj" data-line="180-180"></i>
+                <i class="far fa-star" data-id="di4ugc02" data-line="181-181"></i>
+              </div>
+              <span class="text-xs text-gray-500 ml-1" data-id="ijfayi7e" data-line="183-183">(342)</span>
+            </div>
+            <div class="flex justify-between items-center" data-id="1fpmkkkk" data-line="185-190">
+              <span class="font-bold text-gray-900" data-id="22gj57rl" data-line="186-186">$24.99</span>
+              <button class="bg-primary hover:bg-primaryLight text-white px-3 py-1 rounded-lg text-sm font-medium" data-id="1s1e0hcr" data-line="187-189">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Product 6 -->
+        <div class="product-card bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100" data-id="rrgb31qz" data-line="195-218">
+          <div class="p-4" data-id="dsvemkcs" data-line="196-198">
+            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" alt="Coffee mug" class="w-full h-48 object-contain" data-id="sp29qowe" data-line="197-197">
+          </div>
+          <div class="p-4 pt-0" data-id="j9l3v5kq" data-line="199-217">
+            <h3 class="font-medium text-gray-800 mb-1" data-id="1u8b2frk" data-line="200-200">Ceramic Coffee Mug</h3>
+            <div class="flex items-center mb-2" data-id="9raig08m" data-line="201-210">
+              <div class="flex text-yellow-400" data-id="thoilxu6" data-line="202-208">
+                <i class="fas fa-star" data-id="gjionvib" data-line="203-203"></i>
+                <i class="fas fa-star" data-id="t92e6riz" data-line="204-204"></i>
+                <i class="fas fa-star" data-id="u8tl1ujn" data-line="205-205"></i>
+                <i class="fas fa-star-half-alt" data-id="oxc9t779" data-line="206-206"></i>
+                <i class="far fa-star" data-id="00bh591t" data-line="207-207"></i>
+              </div>
+              <span class="text-xs text-gray-500 ml-1" data-id="m6bu6asj" data-line="209-209">(63)</span>
+            </div>
+            <div class="flex justify-between items-center" data-id="hjro90hc" data-line="211-216">
+              <span class="font-bold text-gray-900" data-id="by9a283u" data-line="212-212">$14.99</span>
+              <button class="bg-primary hover:bg-primaryLight text-white px-3 py-1 rounded-lg text-sm font-medium" data-id="sbyyp378" data-line="213-215">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center" data-id="rnxq246o" data-line="222-240">
+        <nav class="flex items-center gap-1" data-id="y3atkvj8" data-line="223-239">
+          <button class="w-10 h-10 rounded-full bg-primary text-white" data-id="6jaj5ieo" data-line="224-226">
+            1
+          </button>
+          <button class="w-10 h-10 rounded-full hover:bg-gray-100" data-id="yaodeea9" data-line="227-229">
+            2
+          </button>
+          <button class="w-10 h-10 rounded-full hover:bg-gray-100" data-id="xyo08oqo" data-line="230-232">
+            3
+          </button>
+          <button class="w-10 h-10 rounded-full hover:bg-gray-100" data-id="gioa58qt" data-line="233-235">
+            4
+          </button>
+          <button class="w-10 h-10 rounded-full hover:bg-gray-100" data-id="bsqi7td7" data-line="236-238">
+            <i class="fas fa-chevron-right" data-id="pr5trtd1" data-line="237-237"></i>
+          </button>
+        </nav>
+      </div>
+    </div>
+  
+    <script data-id="jmu9aneu" data-line="243-254">
+      // Product card hover effect
+      const productCards = document.querySelectorAll('.product-card');
+      productCards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.classList.add('shadow-md');
+        });
+        card.addEventListener('mouseleave', () => {
+          card.classList.remove('shadow-md');
+        });
+      });
+    </script>
+  
+  </body></html>

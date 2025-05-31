@@ -1,0 +1,290 @@
+<!DOCTYPE html><html lang="en" data-id="ckku9x3x" data-line="1-290"><head data-id="76t034uh" data-line="1-37">
+    <meta charset="UTF-8" data-id="oaav5amd" data-line="2-2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-id="q15iw6pe" data-line="3-3">
+    <script src="https://cdn.tailwindcss.com" data-id="hwgcasyg" data-line="4-4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" data-id="0d45xb6l" data-line="5-5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" data-id="vhxz8t11" data-line="6-6">
+    <script data-id="wiafw3mv" data-line="7-24">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1A73E8',
+              primaryLight: '#4285F4',
+              primaryLighter: '#5E97F6',
+              primaryLightest: '#8AB4F8',
+              primaryPale: '#C6DAFC',
+            },
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <style data-id="f615ey89" data-line="25-36">
+      .checkout-section {
+        transition: all 0.3s ease;
+      }
+      .collapsible:not(.active) .collapsible-content {
+        max-height: 0;
+        overflow: hidden;
+      }
+      .collapsible.active .collapsible-content {
+        max-height: 1000px;
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-50" data-id="4sg9tbri" data-line="38-290">
+    <div class="container mx-auto px-4 py-8 max-w-6xl" data-id="lma8eidk" data-line="39-259">
+      <!-- Breadcrumbs -->
+      <nav class="mb-6 text-sm text-gray-600" aria-label="Breadcrumb" data-id="1rimdyyt" data-line="41-59">
+        <ol class="flex items-center space-x-2" data-id="d2hb42wl" data-line="42-58">
+          <li data-id="nnovyl5z" data-line="43-45">
+            <a href="#" class="hover:text-primary" data-id="xl2rrg6f" data-line="44-44">Home</a>
+          </li>
+          <li data-id="m0ed8qtr" data-line="46-48">
+            <i class="fas fa-chevron-right text-xs" data-id="60m3weov" data-line="47-47"></i>
+          </li>
+          <li data-id="e1f95q6y" data-line="49-51">
+            <a href="#" class="hover:text-primary" data-id="k6hioizm" data-line="50-50">Cart</a>
+          </li>
+          <li data-id="l2lzs0g2" data-line="52-54">
+            <i class="fas fa-chevron-right text-xs" data-id="g0t9fefl" data-line="53-53"></i>
+          </li>
+          <li data-id="7m2js4fa" data-line="55-57">
+            <span class="text-primary font-medium" data-id="j6c8uo5l" data-line="56-56">Checkout</span>
+          </li>
+        </ol>
+      </nav>
+  
+      <!-- Progress Bar -->
+      <div class="mb-8" data-id="fv8l5njk" data-line="62-71">
+        <div class="flex justify-between items-center mb-3" data-id="5nuvjpsu" data-line="63-67">
+          <div class="text-sm font-medium text-primary" data-id="aom6tiis" data-line="64-64">Shipping</div>
+          <div class="text-sm font-medium text-gray-500" data-id="3maz5yr2" data-line="65-65">Payment</div>
+          <div class="text-sm font-medium text-gray-500" data-id="vmype8uw" data-line="66-66">Review</div>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2.5" data-id="fs8rbowp" data-line="68-70">
+          <div class="bg-primary h-2.5 rounded-full" style="width: 33%" data-id="1ds2a7ql" data-line="69-69"></div>
+        </div>
+      </div>
+  
+      <div class="flex flex-col lg:flex-row gap-8" data-id="lnh5cvoq" data-line="73-258">
+        <!-- Left Column - Checkout Form -->
+        <div class="lg:w-2/3" data-id="0nej4j82" data-line="75-218">
+          <!-- Shipping Address -->
+          <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6 checkout-section" data-id="52wyimrc" data-line="77-142">
+            <div class="flex justify-between items-center mb-4" data-id="i4v28eg8" data-line="78-83">
+              <h2 class="text-lg font-bold text-gray-900" data-id="ut9pr1fa" data-line="79-79">Shipping Address</h2>
+              <button class="lg:hidden text-primary text-sm font-medium" onclick="toggleCollapsible('shipping')" data-id="403jhl9n" data-line="80-82">
+                <i class="fas fa-chevron-down" id="shipping-chevron" data-id="denf813t" data-line="81-81"></i>
+              </button>
+            </div>
+            
+            <div class="collapsible active" id="shipping" data-id="cp4h7m6o" data-line="85-141">
+              <div class="collapsible-content" data-id="s2w77dz8" data-line="86-140">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-id="akzwhczt" data-line="87-132">
+                  <div data-id="wiu94umo" data-line="88-91">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="2a8h5i8e" data-line="89-89">First Name</label>
+                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="tcff8qcg" data-line="90-90">
+                  </div>
+                  <div data-id="zauyaqr7" data-line="92-95">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="i1ewsuov" data-line="93-93">Last Name</label>
+                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="6ilis92z" data-line="94-94">
+                  </div>
+                  <div class="md:col-span-2" data-id="qgi1pnc6" data-line="96-99">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="ua4hpxm1" data-line="97-97">Address</label>
+                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="97yc25el" data-line="98-98">
+                  </div>
+                  <div class="md:col-span-2" data-id="pyouwea4" data-line="100-103">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="byubwqe1" data-line="101-101">Apartment, suite, etc. (optional)</label>
+                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="bdp17ltw" data-line="102-102">
+                  </div>
+                  <div data-id="m9oy6g42" data-line="104-107">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="4o2zofwv" data-line="105-105">City</label>
+                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="n1do5evs" data-line="106-106">
+                  </div>
+                  <div data-id="6bna3dc0" data-line="108-115">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="xfy8br4e" data-line="109-109">Country</label>
+                    <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="rswan5pc" data-line="110-114">
+                      <option data-id="h9ltomke" data-line="111-111">United States</option>
+                      <option data-id="5ihwv9m4" data-line="112-112">Canada</option>
+                      <option data-id="87y7vope" data-line="113-113">United Kingdom</option>
+                    </select>
+                  </div>
+                  <div data-id="tnk61mpa" data-line="116-123">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="frk6xt16" data-line="117-117">State/Province</label>
+                    <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="fxya4lg0" data-line="118-122">
+                      <option data-id="nuogacx5" data-line="119-119">California</option>
+                      <option data-id="27oy9aeg" data-line="120-120">New York</option>
+                      <option data-id="eugwet86" data-line="121-121">Texas</option>
+                    </select>
+                  </div>
+                  <div data-id="8gxisotd" data-line="124-127">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="wc0fluvv" data-line="125-125">ZIP/Postal Code</label>
+                    <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="d2pqrf46" data-line="126-126">
+                  </div>
+                  <div class="md:col-span-2" data-id="fogyo5wo" data-line="128-131">
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-id="r5godi91" data-line="129-129">Phone</label>
+                    <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="mjbn59aw" data-line="130-130">
+                  </div>
+                </div>
+  
+                <div class="mt-6" data-id="qpq3ybsr" data-line="134-139">
+                  <div class="flex items-center" data-id="9e7vgi6w" data-line="135-138">
+                    <input id="default-checkbox" type="checkbox" class="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-primary" data-id="l6ewiw21" data-line="136-136">
+                    <label for="default-checkbox" class="ms-2 text-sm text-gray-700" data-id="l4nhjnir" data-line="137-137">Save this information for next time</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Payment Method -->
+          <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6 checkout-section" data-id="ghx19l7e" data-line="145-207">
+            <div class="flex justify-between items-center mb-4" data-id="f44xoqne" data-line="146-151">
+              <h2 class="text-lg font-bold text-gray-900" data-id="ntwgk8z3" data-line="147-147">Payment Method</h2>
+              <button class="lg:hidden text-primary text-sm font-medium" onclick="toggleCollapsible('payment')" data-id="85vld2f4" data-line="148-150">
+                <i class="fas fa-chevron-down" id="payment-chevron" data-id="i8ma0gy1" data-line="149-149"></i>
+              </button>
+            </div>
+            
+            <div class="collapsible active" id="payment" data-id="bmwkb1ia" data-line="153-206">
+              <div class="collapsible-content" data-id="sc1u9atp" data-line="154-205">
+                <div class="space-y-4" data-id="euo2xhf3" data-line="155-204">
+                  <!-- Credit Card -->
+                  <div data-id="oecciccf" data-line="157-191">
+                    <input type="radio" id="credit-card" name="payment-method" class="hidden peer" checked="" data-id="zh0np4s7" data-line="158-158">
+                    <label for="credit-card" class="flex items-center justify-between p-4 border border-gray-200 rounded-lg cursor-pointer peer-checked:border-primary peer-checked:bg-primaryPale" data-id="hb4lh5dd" data-line="159-169">
+                      <div class="flex items-center" data-id="u9ei9v8a" data-line="160-163">
+                        <i class="far fa-credit-card text-xl mr-3 text-gray-600" data-id="hs1x5ce0" data-line="161-161"></i>
+                        <span class="font-medium" data-id="q01g90q8" data-line="162-162">Credit Card</span>
+                      </div>
+                      <div class="flex space-x-2" data-id="rkklo8d4" data-line="164-168">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa logo" class="h-6" data-id="if8xosl3" data-line="165-165">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" alt="Mastercard logo" class="h-6" data-id="pwk0cc30" data-line="166-166">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png" alt="Amex logo" class="h-6" data-id="bk07dash" data-line="167-167">
+                      </div>
+                    </label>
+  
+                    <div id="credit-card-form" class="mt-4 p-4 border border-gray-200 rounded-lg" data-id="me683i6t" data-line="171-190">
+                      <div class="mb-4" data-id="1m69l89k" data-line="172-175">
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-id="qm9hybsr" data-line="173-173">Card Number</label>
+                        <input type="text" placeholder="0000 0000 0000 0000" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="zboeia4m" data-line="174-174">
+                      </div>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-id="7q683n4b" data-line="176-185">
+                        <div data-id="4hmnmemg" data-line="177-180">
+                          <label class="block text-sm font-medium text-gray-700 mb-1" data-id="g7r4k5b6" data-line="178-178">Expiration Date</label>
+                          <input type="text" placeholder="MM/YY" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="awiikpj8" data-line="179-179">
+                        </div>
+                        <div data-id="038uzrun" data-line="181-184">
+                          <label class="block text-sm font-medium text-gray-700 mb-1" data-id="2e96yc9g" data-line="182-182">Security Code</label>
+                          <input type="text" placeholder="CVC" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="4y7nxs74" data-line="183-183">
+                        </div>
+                      </div>
+                      <div class="mt-4" data-id="c696360z" data-line="186-189">
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-id="1fsoeuas" data-line="187-187">Name on Card</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" data-id="hl4rhs10" data-line="188-188">
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- PayPal -->
+                  <div data-id="miyjdc2e" data-line="194-203">
+                    <input type="radio" id="paypal" name="payment-method" class="hidden peer" data-id="pk0evzog" data-line="195-195">
+                    <label for="paypal" class="flex items-center justify-between p-4 border border-gray-200 rounded-lg cursor-pointer peer-checked:border-primary peer-checked:bg-primaryPale" data-id="ep8vwuzr" data-line="196-202">
+                      <div class="flex items-center" data-id="nmy9yabk" data-line="197-200">
+                        <i class="fab fa-paypal text-xl mr-3 text-blue-500" data-id="6ornxamw" data-line="198-198"></i>
+                        <span class="font-medium" data-id="46omdnxg" data-line="199-199">PayPal</span>
+                      </div>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="PayPal logo" class="h-6" data-id="ra0d80hk" data-line="201-201">
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex justify-between" data-id="n7yz9ai5" data-line="209-217">
+            <a href="#" class="text-primary font-medium flex items-center" data-id="n2iwybf1" data-line="210-213">
+              <i class="fas fa-arrow-left mr-2" data-id="scodwr9l" data-line="211-211"></i>
+              Return to cart
+            </a>
+            <button class="bg-primary hover:bg-primaryLight text-white py-3 px-8 rounded-lg font-medium" data-id="7tkzv9nr" data-line="214-216">
+              Continue to Review
+            </button>
+          </div>
+        </div>
+  
+        <!-- Right Column - Order Summary -->
+        <div class="lg:w-1/3" data-id="zo9t2672" data-line="221-257">
+          <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6" data-id="rsh38fze" data-line="222-256">
+            <h2 class="text-lg font-bold text-gray-900 mb-4" data-id="b8ts1h3r" data-line="223-223">Order Summary</h2>
+            
+            <div class="space-y-4 mb-6" data-id="221axaf2" data-line="225-238">
+              <div class="flex justify-between" data-id="eyjnfw29" data-line="226-229">
+                <span class="text-gray-600" data-id="frchx99g" data-line="227-227">Subtotal (3 items)</span>
+                <span class="font-medium" data-id="67hxxplh" data-line="228-228">$987.98</span>
+              </div>
+              <div class="flex justify-between" data-id="ezeaalk9" data-line="230-233">
+                <span class="text-gray-600" data-id="73tmfmtj" data-line="231-231">Shipping</span>
+                <span class="font-medium" data-id="eq1wmqg3" data-line="232-232">Free</span>
+              </div>
+              <div class="flex justify-between" data-id="9h4c8u22" data-line="234-237">
+                <span class="text-gray-600" data-id="2exlbh0y" data-line="235-235">Tax</span>
+                <span class="font-medium" data-id="17vazvei" data-line="236-236">$79.04</span>
+              </div>
+            </div>
+  
+            <div class="border-t border-gray-200 pt-4 mb-6" data-id="ftizrzlh" data-line="240-245">
+              <div class="flex justify-between" data-id="vihg87eq" data-line="241-244">
+                <span class="font-bold text-lg" data-id="kjadu9pw" data-line="242-242">Total</span>
+                <span class="font-bold text-lg" data-id="foxpemrn" data-line="243-243">$1,067.02</span>
+              </div>
+            </div>
+  
+            <div class="flex items-center text-sm text-gray-500 mb-6" data-id="bpk3xv8t" data-line="247-250">
+              <i class="fas fa-lock text-primary mr-2" data-id="av5pnmtn" data-line="248-248"></i>
+              <span data-id="x7bw1ces" data-line="249-249">Secure checkout</span>
+            </div>
+  
+            <div class="text-xs text-gray-500" data-id="xehk2qjn" data-line="252-255">
+              <p class="mb-2" data-id="o1pv6lkf" data-line="253-253">By placing your order, you agree to our <a href="#" class="text-primary" data-id="4riaz9jg" data-line="253-253">Terms of Service</a> and <a href="#" class="text-primary" data-id="o7nor9s9" data-line="253-253">Privacy Policy</a>.</p>
+              <p data-id="6pwdx1wf" data-line="254-254">All transactions are secure and encrypted.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script data-id="kxwvfmsx" data-line="261-288">
+      // Toggle collapsible sections on mobile
+      function toggleCollapsible(id) {
+        const element = document.getElementById(id);
+        const chevron = document.getElementById(`${id}-chevron`);
+        
+        element.classList.toggle('active');
+        
+        if (element.classList.contains('active')) {
+          chevron.classList.remove('fa-chevron-down');
+          chevron.classList.add('fa-chevron-up');
+        } else {
+          chevron.classList.remove('fa-chevron-up');
+          chevron.classList.add('fa-chevron-down');
+        }
+      }
+  
+      // Payment method toggle
+      document.querySelectorAll('input[name="payment-method"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+          if (this.id === 'credit-card') {
+            document.getElementById('credit-card-form').style.display = 'block';
+          } else {
+            document.getElementById('credit-card-form').style.display = 'none';
+          }
+        });
+      });
+    </script>
+  
+  </body></html>
